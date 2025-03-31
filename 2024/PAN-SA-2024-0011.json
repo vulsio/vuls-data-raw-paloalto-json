@@ -1,0 +1,143 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2024-0011",
+		"assignerOrgId": "00000000-0000-4000-9000-000000000000",
+		"assignerShortName": "palo_alto",
+		"serial": 1,
+		"state": "PUBLISHED",
+		"datePublished": "2024-10-09T07:00:00.000Z",
+		"dateUpdated": "2024-10-09T00:00:00.000Z",
+		"dateReserved": "2024-10-09T07:00:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "00000000-0000-4000-9000-000000000000",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T08:00:00.000Z"
+			},
+			"title": "Chromium: Monthly Vulnerability Updates",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks incorporated the following Chromium security fixes into its products:\n\n- https://chromereleases.googleblog.com/2024/09/stable-channel-update-for-desktop_17.html\n- https://chromereleases.googleblog.com/2024/09/stable-channel-update-for-desktop_24.html\n- https://chromereleases.googleblog.com/2024/10/stable-channel-update-for-desktop.html\n- https://chromereleases.googleblog.com/2024/10/stable-channel-update-for-desktop_8.html",
+					"supportingMedia": [
+						{
+							"base64": true,
+							"type": "text/html",
+							"value": "<pre>Palo Alto Networks incorporated the following Chromium security fixes into its products:\n\n- https://chromereleases.googleblog.com/2024/09/stable-channel-update-for-desktop_17.html\n- https://chromereleases.googleblog.com/2024/09/stable-channel-update-for-desktop_24.html\n- https://chromereleases.googleblog.com/2024/10/stable-channel-update-for-desktop.html\n- https://chromereleases.googleblog.com/2024/10/stable-channel-update-for-desktop_8.html</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Prisma Access Browser",
+					"defaultStatus": "unaffected",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "0",
+							"lessThan": "129.59.2896.5",
+							"changes": [
+								{
+									"at": "129.101.2913.3",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV4_0": {
+						"version": "4.0",
+						"vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/AU:N/R:A/V:D/RE:L/U:Amber",
+						"baseScore": 8.6,
+						"baseSeverity": "HIGH",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"attackRequirements": "NONE",
+						"privilegesRequired": "NONE",
+						"userInteraction": "ACTIVE",
+						"vulnConfidentialityImpact": "HIGH",
+						"vulnIntegrityImpact": "HIGH",
+						"vulnAvailabilityImpact": "HIGH",
+						"subConfidentialityImpact": "NONE",
+						"subIntegrityImpact": "NONE",
+						"subAvailabilityImpact": "NONE",
+						"Safety": "NOT_DEFINED",
+						"Automatable": "NO",
+						"Recovery": "AUTOMATIC",
+						"valueDensity": "DIFFUSE",
+						"vulnerabilityResponseEffort": "LOW",
+						"providerUrgency": "AMBER"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "CVE-2024-8904, CVE-2024-8905, CVE-2024-8906, CVE-2024-8907, CVE-2024-8908, and CVE-2024-8909 are fixed in Prisma Access Browser 129.59.2896.5, and all later Prisma Access Browser versions.\nCVE-2024-9120, CVE-2024-9121, CVE-2024-9122, and CVE-2024-9123 are fixed in Prisma Access Browser 129.71.2910.1, and all later Prisma Access Browser versions.\nCVE-2024-7025, CVE-2024-9369, and CVE-2024-9370 are fixed in Prisma Access Browser 129.90.2910.2, and all later Prisma Access Browser versions.\nCVE-2024-9602 and CVE-2024-9603 are fixed in Prisma Access Browser 129.101.2913.3, and all later Prisma Access Browser versions.",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "CVE-2024-8904, CVE-2024-8905, CVE-2024-8906, CVE-2024-8907, CVE-2024-8908, and CVE-2024-8909 are fixed in Prisma Access Browser 129.59.2896.5, and all later Prisma Access Browser versions.\nCVE-2024-9120, CVE-2024-9121, CVE-2024-9122, and CVE-2024-9123 are fixed in Prisma Access Browser 129.71.2910.1, and all later Prisma Access Browser versions.\nCVE-2024-7025, CVE-2024-9369, and CVE-2024-9370 are fixed in Prisma Access Browser 129.90.2910.2, and all later Prisma Access Browser versions.\nCVE-2024-9602 and CVE-2024-9603 are fixed in Prisma Access Browser 129.101.2913.3, and all later Prisma Access Browser versions."
+						}
+					]
+				}
+			],
+			"exploits": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks is not aware of any malicious exploitation of this issue.",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "Palo Alto Networks is not aware of any malicious exploitation of this issue."
+						}
+					]
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2024-0010"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2024-10-09T16:00:00.000Z",
+					"lang": "eng",
+					"value": "Initial publication"
+				}
+			],
+			"source": {
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2024-10-09T16:00:00.000Z",
+			"x_generator": {
+				"engine": "vulnogram 0.1.0-rc1"
+			},
+			"x_affectedList": [
+				"Prisma Access Browser"
+			]
+		}
+	}
+}

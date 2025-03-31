@@ -1,0 +1,475 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2025-0001",
+		"assignerOrgId": "00000000-0000-4000-9000-000000000000",
+		"serial": 1,
+		"state": "PUBLISHED"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "00000000-0000-4000-9000-000000000000"
+			},
+			"title": "Expedition: Multiple Vulnerabilities in Expedition Migration Tool Lead to Exposure of Firewall Credentials",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "Multiple vulnerabilities in the Palo Alto Networks Expedition migration tool enable an attacker to read Expedition database contents and arbitrary files, as well as create and delete arbitrary files on the Expedition system. These files include information such as usernames, cleartext passwords, device configurations, and device API keys for firewalls running PAN-OS software.\n\n\nExpedition, previously known as the Migration Tool, is a free tool that facilitates migration to the Palo Alto Networks NGFW platform from other firewall vendors and provides a temporary workspace for optimizing Palo Alto Networks security policies. Expedition is designed to only be used temporarily for migration purposes, not to be run in production. You do not need it to operate any Palo Alto Networks products or services. Expedition reached its End of Life (EoL) date on December 31, 2024. Please use the suggested alternatives listed in the Expedition End of Life Announcement (https://live.paloaltonetworks.com/t5/expedition-articles/important-update-end-of-life-announcement-for-palo-alto-networks/ta-p/589642).\n\nThese issues do not otherwise impact firewalls, Panorama appliances, Prisma Access deployments, or Cloud NGFWs.",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "<p><span>Multiple vulnerabilities in the Palo Alto Networks Expedition migration tool enable an attacker to read Expedition database contents and arbitrary files, as well as create and delete arbitrary files on the Expedition system. These files include information such as usernames, cleartext passwords, device configurations, and device API keys for firewalls running PAN-OS software.</span><span><br></span></p><b></b><p><span>Expedition, previously known as the Migration Tool, is a free tool that facilitates migration to the Palo Alto Networks NGFW platform from other firewall vendors and provides a temporary workspace for optimizing Palo Alto Networks security policies. Expedition is designed to only be used temporarily for migration purposes, not to be run in production. You do not need it to operate any Palo Alto Networks products or services. Expedition reached its End of Life (EoL) date on December 31, 2024. Please use the suggested alternatives listed in </span><a target=\"_blank\" rel=\"nofollow\" href=\"https://live.paloaltonetworks.com/t5/expedition-articles/important-update-end-of-life-announcement-for-palo-alto-networks/ta-p/589642\"><span>the Expedition End of Life Announcement</span></a><span>.</span></p><p><span>These issues do not otherwise impact firewalls, Panorama appliances, Prisma Access deployments, or Cloud NGFWs.</span></p>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Cloud NGFW",
+					"defaultStatus": "unaffected",
+					"versions": [
+						{
+							"status": "unaffected",
+							"versionType": "custom",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Expedition",
+					"defaultStatus": "unaffected",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "1",
+							"lessThan": "1.2.101",
+							"changes": [
+								{
+									"at": "1.2.101",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Panorama",
+					"defaultStatus": "unaffected",
+					"versions": [
+						{
+							"status": "unaffected",
+							"versionType": "custom",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "PAN-OS",
+					"defaultStatus": "unaffected",
+					"versions": [
+						{
+							"status": "unaffected",
+							"versionType": "custom",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Prisma Access",
+					"defaultStatus": "unaffected",
+					"versions": [
+						{
+							"status": "unaffected",
+							"versionType": "custom",
+							"version": "All"
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "CWE",
+							"lang": "en",
+							"description": "CWE-89 Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+							"cweId": "CWE-89"
+						}
+					]
+				},
+				{
+					"descriptions": [
+						{
+							"type": "CWE",
+							"lang": "en",
+							"description": "CWE-79 Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+							"cweId": "CWE-79"
+						}
+					]
+				},
+				{
+					"descriptions": [
+						{
+							"type": "CWE",
+							"lang": "en",
+							"description": "CWE-73 External Control of File Name or Path",
+							"cweId": "CWE-73"
+						}
+					]
+				},
+				{
+					"descriptions": [
+						{
+							"type": "CWE",
+							"lang": "en",
+							"description": "CWE-155 Improper Neutralization of Wildcards or Matching Symbols",
+							"cweId": "CWE-155"
+						}
+					]
+				},
+				{
+					"descriptions": [
+						{
+							"type": "CWE",
+							"lang": "en",
+							"description": "CWE-78 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+							"cweId": "CWE-78"
+						}
+					]
+				}
+			],
+			"impacts": [
+				{
+					"descriptions": [
+						{
+							"lang": "en",
+							"value": "CAPEC-66 SQL Injection"
+						}
+					],
+					"capecId": "CAPEC-66"
+				},
+				{
+					"descriptions": [
+						{
+							"lang": "en",
+							"value": "CAPEC-63 Cross-Site Scripting (XSS)"
+						}
+					],
+					"capecId": "CAPEC-63"
+				},
+				{
+					"descriptions": [
+						{
+							"lang": "en",
+							"value": "CAPEC-165 File Manipulation"
+						}
+					],
+					"capecId": "CAPEC-165"
+				},
+				{
+					"descriptions": [
+						{
+							"lang": "en",
+							"value": "CAPEC-127 Directory Indexing"
+						}
+					],
+					"capecId": "CAPEC-127"
+				},
+				{
+					"descriptions": [
+						{
+							"lang": "en",
+							"value": "CAPEC-88 OS Command Injection"
+						}
+					],
+					"capecId": "CAPEC-88"
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "CVE-2025-0103"
+						}
+					],
+					"cvssV4_0": {
+						"version": "4.0",
+						"vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:L/VA:N/SC:H/SI:N/SA:N/E:U/AU:N/R:U/V:C/RE:H/U:Amber",
+						"baseScore": 9.2,
+						"baseSeverity": "CRITICAL",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"attackRequirements": "NONE",
+						"privilegesRequired": "NONE",
+						"userInteraction": "NONE",
+						"vulnConfidentialityImpact": "HIGH",
+						"vulnIntegrityImpact": "LOW",
+						"vulnAvailabilityImpact": "NONE",
+						"subConfidentialityImpact": "HIGH",
+						"subIntegrityImpact": "NONE",
+						"subAvailabilityImpact": "NONE",
+						"exploitMaturity": "UNREPORTED",
+						"Safety": "NOT_DEFINED",
+						"Automatable": "NO",
+						"Recovery": "USER",
+						"valueDensity": "CONCENTRATED",
+						"vulnerabilityResponseEffort": "HIGH",
+						"providerUrgency": "AMBER",
+						"threatScore": 7.8,
+						"threatSeverity": "HIGH"
+					}
+				},
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "CVE-2025-0104"
+						}
+					],
+					"cvssV4_0": {
+						"version": "4.0",
+						"vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:U/AU:N/R:U/V:C/RE:H/U:Amber",
+						"baseScore": 7,
+						"baseSeverity": "HIGH",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"attackRequirements": "NONE",
+						"privilegesRequired": "NONE",
+						"userInteraction": "ACTIVE",
+						"vulnConfidentialityImpact": "HIGH",
+						"vulnIntegrityImpact": "LOW",
+						"vulnAvailabilityImpact": "NONE",
+						"subConfidentialityImpact": "NONE",
+						"subIntegrityImpact": "NONE",
+						"subAvailabilityImpact": "NONE",
+						"exploitMaturity": "UNREPORTED",
+						"Safety": "NOT_DEFINED",
+						"Automatable": "NO",
+						"Recovery": "USER",
+						"valueDensity": "CONCENTRATED",
+						"vulnerabilityResponseEffort": "HIGH",
+						"providerUrgency": "AMBER",
+						"threatScore": 4.7,
+						"threatSeverity": "MEDIUM"
+					}
+				},
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "CVE-2025-0105"
+						}
+					],
+					"cvssV4_0": {
+						"version": "4.0",
+						"vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:U/AU:N/R:U/V:C/RE:H/U:Green",
+						"baseScore": 6.9,
+						"baseSeverity": "MEDIUM",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"attackRequirements": "NONE",
+						"privilegesRequired": "NONE",
+						"userInteraction": "NONE",
+						"vulnConfidentialityImpact": "NONE",
+						"vulnIntegrityImpact": "LOW",
+						"vulnAvailabilityImpact": "NONE",
+						"subConfidentialityImpact": "NONE",
+						"subIntegrityImpact": "NONE",
+						"subAvailabilityImpact": "NONE",
+						"exploitMaturity": "UNREPORTED",
+						"Safety": "NOT_DEFINED",
+						"Automatable": "NO",
+						"Recovery": "USER",
+						"valueDensity": "CONCENTRATED",
+						"vulnerabilityResponseEffort": "HIGH",
+						"providerUrgency": "GREEN",
+						"threatScore": 2.7,
+						"threatSeverity": "LOW"
+					}
+				},
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "CVE-2025-0106"
+						}
+					],
+					"cvssV4_0": {
+						"version": "4.0",
+						"vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:U/AU:N/R:U/V:C/RE:H/U:Green",
+						"baseScore": 6.9,
+						"baseSeverity": "MEDIUM",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"attackRequirements": "NONE",
+						"privilegesRequired": "NONE",
+						"userInteraction": "NONE",
+						"vulnConfidentialityImpact": "LOW",
+						"vulnIntegrityImpact": "NONE",
+						"vulnAvailabilityImpact": "NONE",
+						"subConfidentialityImpact": "NONE",
+						"subIntegrityImpact": "NONE",
+						"subAvailabilityImpact": "NONE",
+						"exploitMaturity": "UNREPORTED",
+						"Safety": "NOT_DEFINED",
+						"Automatable": "NO",
+						"Recovery": "USER",
+						"valueDensity": "CONCENTRATED",
+						"vulnerabilityResponseEffort": "HIGH",
+						"providerUrgency": "GREEN",
+						"threatScore": 2.7,
+						"threatSeverity": "LOW"
+					}
+				},
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "CVE-2025-0107"
+						}
+					],
+					"cvssV4_0": {
+						"version": "4.0",
+						"vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:H/SI:N/SA:N/E:U/AU:N/R:U/V:C/RE:H/U:Green",
+						"baseScore": 7.7,
+						"baseSeverity": "HIGH",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"attackRequirements": "NONE",
+						"privilegesRequired": "NONE",
+						"userInteraction": "NONE",
+						"vulnConfidentialityImpact": "LOW",
+						"vulnIntegrityImpact": "LOW",
+						"vulnAvailabilityImpact": "LOW",
+						"subConfidentialityImpact": "HIGH",
+						"subIntegrityImpact": "NONE",
+						"subAvailabilityImpact": "NONE",
+						"exploitMaturity": "UNREPORTED",
+						"Safety": "NOT_DEFINED",
+						"Automatable": "NO",
+						"Recovery": "USER",
+						"valueDensity": "CONCENTRATED",
+						"vulnerabilityResponseEffort": "HIGH",
+						"providerUrgency": "GREEN",
+						"threatScore": 4.4,
+						"threatSeverity": "MEDIUM"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "Ensure that all network access to Expedition is restricted to only authorized users, hosts, and networks. If you are not actively using Expedition, make sure that your Expedition software is shut down.",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "<p><span>Ensure that all network access to Expedition is restricted to only authorized users, hosts, and networks. If you are not actively using Expedition, make sure that your Expedition software is shut down.</span></p>"
+						}
+					]
+				}
+			],
+			"solutions": [
+				{
+					"lang": "eng",
+					"value": "The following CVEs are fixed in the specified Expedition version and all later versions* of Expedition.\n\n\nCVE              EXPEDITION\nCVE-2025-0103    Expedition 1.2.100\nCVE-2025-0104    Expedition 1.2.100\nCVE-2025-0105    Expedition 1.2.101\nCVE-2025-0106    Expedition 1.2.101\nCVE-2025-0107    Expedition 1.2.100\n\n* Expedition reached its End of Life (EoL) date (https://live.paloaltonetworks.com/t5/expedition-articles/important-update-end-of-life-announcement-for-palo-alto-networks/ta-p/589642) and is no longer supported. We added these fixes prior to the EoL date and we do not plan to make any additional updates or security fixes. Please use the suggested alternatives listed in the Expedition End of Life Announcement (https://live.paloaltonetworks.com/t5/expedition-articles/important-update-end-of-life-announcement-for-palo-alto-networks/ta-p/589642).\n",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "<p>The following CVEs are fixed in the specified Expedition version and all later versions* of Expedition.<br></p><table class=\"tbl\"><thead><tr><th>CVE</th><th>Expedition</th></tr></thead><tbody><tr><td>CVE-2025-0103&nbsp;</td><td>Expedition 1.2.100</td></tr><tr><td>CVE-2025-0104<br></td><td>Expedition 1.2.100<br></td></tr><tr><td>CVE-2025-0105<br></td><td>Expedition 1.2.101<br></td></tr><tr><td>CVE-2025-0106<br></td><td>Expedition 1.2.101<br></td></tr><tr><td>CVE-2025-0107<br></td><td>Expedition 1.2.100<br></td></tr></tbody></table><p>* Expedition <a target=\"_blank\" rel=\"nofollow\" href=\"https://live.paloaltonetworks.com/t5/expedition-articles/important-update-end-of-life-announcement-for-palo-alto-networks/ta-p/589642\">reached its End of Life (EoL) date</a> and is no longer supported. We added these fixes prior to the EoL date and we do not plan to make any additional updates or security fixes. Please use the suggested alternatives listed in <a target=\"_blank\" rel=\"nofollow\" href=\"https://live.paloaltonetworks.com/t5/expedition-articles/important-update-end-of-life-announcement-for-palo-alto-networks/ta-p/589642\">the Expedition End of Life Announcement</a>.<br></p>"
+						}
+					]
+				}
+			],
+			"exploits": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks is not aware of any malicious exploitation of these issues.\n",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "<span>Palo Alto Networks is not aware of any malicious exploitation of these issues.</span>"
+						}
+					]
+				}
+			],
+			"configurations": [
+				{
+					"lang": "en",
+					"value": "No special configuration is required to be affected by these issues.\n",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "<span>No special configuration is required to be affected by these issues.</span>"
+						}
+					]
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"vendor-advisory"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2025-0001"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2025-01-08T17:00:00.000Z",
+					"lang": "en",
+					"value": "Initial publication"
+				},
+				{
+					"time": "2025-01-15T00:30:00.000Z",
+					"lang": "en",
+					"value": "Updated CVSS Score for CVE-2025-0107"
+				}
+			],
+			"credits": [
+				{
+					"type": "finder",
+					"lang": "en",
+					"value": "Palo Alto Networks thanks an independent security researcher working with SSD Secure Disclosure for discovering and reporting CVE-2025-0107."
+				},
+				{
+					"type": "finder",
+					"lang": "en",
+					"value": "Palo Alto Networks thanks Mesut Cetin of RedTeamer IT Security for discovering and reporting CVE-2025-0103 and CVE-2025-0104."
+				},
+				{
+					"type": "finder",
+					"lang": "en",
+					"value": "Palo Alto Networks thanks Advanced Research Team, CrowdStrike for discovering and reporting CVE-2025-0104, CVE-2025-0105, CVE-2025-0106, and CVE-2025-0107."
+				}
+			],
+			"source": {
+				"discovery": "EXTERNAL"
+			},
+			"tags": [
+				"unsupported-when-assigned"
+			],
+			"datePublic": "2025-01-08T17:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.1.0-dev"
+			}
+		}
+	}
+}

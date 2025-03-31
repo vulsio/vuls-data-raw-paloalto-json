@@ -1,0 +1,123 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2015-0005",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2015-07-24T07:00:00.000Z",
+		"dateReserved": "2015-07-24T07:00:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Device management authentication bypass",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "Devices running PAN-OS 7.0.0 (including Panorama) that are configured to use LDAP for captive portal or device management authentication do not properly perform authentication against the LDAP server in specific cases, leading to an authentication bypass.  There is no issue if you are using Radius or local authentication instead of LDAP or prior versions of PAN-OS; nor does this affect authentication attempts from GlobalProtect clients.\nThis vulnerability can lead to authentication bypass for captive portal or device management login attempts.\nThis issue only affects PAN-OS 7.0.0",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>Devices running PAN-OS 7.0.0 (including Panorama) that are configured to use LDAP for captive portal or device management authentication do not properly perform authentication against the LDAP server in specific cases, leading to an authentication bypass.  There is no issue if you are using Radius or local authentication instead of LDAP or prior versions of PAN-OS; nor does this affect authentication attempts from GlobalProtect clients.\nThis vulnerability can lead to authentication bypass for captive portal or device management login attempts.\nThis issue only affects PAN-OS 7.0.0</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "PAN-OS",
+					"versions": [
+						{
+							"status": "affected",
+							"version": "7.0.0"
+						},
+						{
+							"status": "unaffected",
+							"versionType": "custom",
+							"version": "7.0.1",
+							"lessThan": "7.0*"
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "text",
+							"lang": "en",
+							"description": "Device management authentication bypass"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"privilegesRequired": "NONE",
+						"userInteraction": "NONE",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "HIGH",
+						"integrityImpact": "HIGH",
+						"availabilityImpact": "HIGH",
+						"baseScore": 9.8,
+						"baseSeverity": "CRITICAL"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "This issue only affects devices and Panorama configured to use LDAP for captive portal or device management authentication.  This issue is strongly mitigated by following security appliance management best practices, requiring that network access to the management interfaces be isolated and strictly limited only to security administration personnel.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "This issue only affects devices and Panorama configured to use LDAP for captive portal or device management authentication.  This issue is strongly mitigated by following security appliance management best practices, requiring that network access to the management interfaces be isolated and strictly limited only to security administration personnel."
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "PAN-OS 7.0.1 and subsequent.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "PAN-OS 7.0.1 and subsequent."
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2015-0005"
+				}
+			],
+			"source": {
+				"advisory": "PAN-SA-2015-0005",
+				"discovery": "INTERNAL"
+			},
+			"datePublic": "2015-07-24T07:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			},
+			"x_affectedList": [
+				"PAN-OS 7.0"
+			]
+		}
+	}
+}

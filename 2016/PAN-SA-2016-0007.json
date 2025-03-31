@@ -1,0 +1,143 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2016-0007",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2016-05-23T18:00:00.000Z",
+		"dateReserved": "2016-05-23T18:00:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "User-ID Agent API Access",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "The Palo Alto Networks User-ID agent for Windows implements an API to retrieve the agent’s configuration. This TLS-secured API call returns encrypted credentials to the domain account configured on the User-ID agent, which has read-only rights for Security Event Logs on Domain Controllers. Anyone with access to the User-ID agent Service TCP port can retrieve this encrypted password by invoking this API. (Ref #93349)\nOnly users who possess network level access to the User-ID agent Service TCP port can invoke this API.\nThis issue affects Windows devices running all versions of User-ID agent up to 7.0.3",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>The Palo Alto Networks User-ID agent for Windows implements an API to retrieve the agent’s configuration. This TLS-secured API call returns encrypted credentials to the domain account configured on the User-ID agent, which has read-only rights for Security Event Logs on Domain Controllers. Anyone with access to the User-ID agent Service TCP port can retrieve this encrypted password by invoking this API. (Ref #93349)\nOnly users who possess network level access to the User-ID agent Service TCP port can invoke this API.\nThis issue affects Windows devices running all versions of User-ID agent up to 7.0.3</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "User-ID Agent",
+					"platforms": [
+						"Windows"
+					],
+					"versions": [
+						{
+							"status": "unaffected",
+							"versionType": "custom",
+							"version": "7.0.4",
+							"lessThan": "7.0*"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "User-ID Agent",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "7.0",
+							"lessThanOrEqual": "7.0.3"
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "text",
+							"lang": "en",
+							"description": "User-ID API Access"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:N/A:N",
+						"attackVector": "LOCAL",
+						"attackComplexity": "HIGH",
+						"privilegesRequired": "HIGH",
+						"userInteraction": "NONE",
+						"scope": "CHANGED",
+						"confidentialityImpact": "HIGH",
+						"integrityImpact": "NONE",
+						"availabilityImpact": "NONE",
+						"baseScore": 5.3,
+						"baseSeverity": "MEDIUM"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "Only users on the network can access the User-ID agent Service TCP port and make this API call. Palo Alto Networks recommends that the host running the User-ID agent and the Domain Controllers share the same network-level access restrictions. The User-ID agent should be able to reach only the Domain Controllers and only accessible by Palo Alto Networks firewalls to prevent direct access by malevolent entities.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "Only users on the network can access the User-ID agent Service TCP port and make this API call. Palo Alto Networks recommends that the host running the User-ID agent and the Domain Controllers share the same network-level access restrictions. The User-ID agent should be able to reach only the Domain Controllers and only accessible by Palo Alto Networks firewalls to prevent direct access by malevolent entities."
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "User-ID agent 7.0.4 and later releases",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "User-ID agent 7.0.4 and later releases"
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2016-0007"
+				}
+			],
+			"credits": [
+				{
+					"lang": "en",
+					"value": "Felix Wilhelm , ERNW Research"
+				}
+			],
+			"source": {
+				"advisory": "PAN-SA-2016-0007",
+				"defect": [
+					"93349"
+				],
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2016-05-23T18:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			},
+			"x_affectedList": [
+				"User-ID Agent 7.0"
+			]
+		}
+	}
+}

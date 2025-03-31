@@ -1,0 +1,251 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2016-0033",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2016-10-31T16:03:00.000Z",
+		"dateReserved": "2016-10-31T16:03:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Cross-Site Scripting in Captive Portal",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks firewalls can be configured to identify users through a captive portal. This process is vulnerable to a cross-site scripting attack. (Ref # PAN-56221/93759).\nThe captive portal is reserved to identify internal users, thus should not be exposed to the Internet.\n\nThis issue affects PAN-OS 5.0.19 and earlier; PAN-OS 5.1.12 and earlier; PAN-OS 6.0.14 and earlier; PAN-OS 6.1.14 and earlier; PAN-OS 7.0.10 and earlier; PAN-OS 7.1.4 and earlier\n",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>Palo Alto Networks firewalls can be configured to identify users through a captive portal. This process is vulnerable to a cross-site scripting attack. (Ref # PAN-56221/93759).\nThe captive portal is reserved to identify internal users, thus should not be exposed to the Internet.\n\nThis issue affects PAN-OS 5.0.19 and earlier; PAN-OS 5.1.12 and earlier; PAN-OS 6.0.14 and earlier; PAN-OS 6.1.14 and earlier; PAN-OS 7.0.10 and earlier; PAN-OS 7.1.4 and earlier\n</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "PAN-OS",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "5.0",
+							"lessThanOrEqual": "5.0.19",
+							"changes": [
+								{
+									"at": "5.0.20",
+									"status": "unaffected"
+								}
+							]
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "5.1",
+							"lessThanOrEqual": "5.1.12",
+							"changes": [
+								{
+									"at": "5.1.13",
+									"status": "unaffected"
+								}
+							]
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "6.0",
+							"lessThanOrEqual": "6.0.14",
+							"changes": [
+								{
+									"at": "6.0.15",
+									"status": "unaffected"
+								}
+							]
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "6.1",
+							"lessThanOrEqual": "6.1.14",
+							"changes": [
+								{
+									"at": "6.1.15",
+									"status": "unaffected"
+								}
+							]
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "7.0",
+							"lessThanOrEqual": "7.0.10",
+							"changes": [
+								{
+									"at": "7.0.11",
+									"status": "unaffected"
+								}
+							]
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "7.1",
+							"lessThanOrEqual": "7.1.4",
+							"changes": [
+								{
+									"at": "7.1.5",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "CWE",
+							"lang": "en",
+							"description": "CWE-79 Cross-site Scripting (XSS)",
+							"cweId": "CWE-79"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"privilegesRequired": "NONE",
+						"userInteraction": "REQUIRED",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "LOW",
+						"integrityImpact": "LOW",
+						"availabilityImpact": "NONE",
+						"baseScore": 5.4,
+						"baseSeverity": "MEDIUM"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "The captive portal is typically deployed to internal user population as a way to identify local users and should therefore not be exposed to the wider Internet.\n",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "The captive portal is typically deployed to internal user population as a way to identify local users and should therefore not be exposed to the wider Internet.\n"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "PAN-OS 5.0.20 and later; PAN-OS 5.1.13 and later; PAN-OS 6.0.15 and later; PAN-OS 6.1.15 and later; PAN-OS 7.0.11 and later; PAN-OS 7.1.5 and later\n",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "PAN-OS 5.0.20 and later; PAN-OS 5.1.13 and later; PAN-OS 6.0.15 and later; PAN-OS 6.1.15 and later; PAN-OS 7.0.11 and later; PAN-OS 7.1.5 and later\n"
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2016-0033"
+				}
+			],
+			"credits": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks would like to thank David Vassallo for reporting this issue to us."
+				}
+			],
+			"source": {
+				"advisory": "PAN-SA-2016-0033",
+				"defect": [
+					"PAN-56221",
+					"PAN-93759"
+				],
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2016-10-31T16:03:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			},
+			"x_affectedList": [
+				"PAN-OS 7.1.4",
+				"PAN-OS 7.1.3",
+				"PAN-OS 7.1.2",
+				"PAN-OS 7.1.1",
+				"PAN-OS 7.1.0",
+				"PAN-OS 7.1",
+				"PAN-OS 7.0.10",
+				"PAN-OS 7.0.9",
+				"PAN-OS 7.0.8",
+				"PAN-OS 7.0.7",
+				"PAN-OS 7.0.6",
+				"PAN-OS 7.0.5-h2",
+				"PAN-OS 7.0.5-h1",
+				"PAN-OS 7.0.5",
+				"PAN-OS 7.0.4",
+				"PAN-OS 7.0.3",
+				"PAN-OS 7.0.2",
+				"PAN-OS 7.0.1",
+				"PAN-OS 7.0",
+				"PAN-OS 6.1.14",
+				"PAN-OS 6.1.13",
+				"PAN-OS 6.1.12",
+				"PAN-OS 6.1.11",
+				"PAN-OS 6.1.10",
+				"PAN-OS 6.1.9",
+				"PAN-OS 6.1.8",
+				"PAN-OS 6.1.7",
+				"PAN-OS 6.1.6",
+				"PAN-OS 6.1.5",
+				"PAN-OS 6.1.4",
+				"PAN-OS 6.1.3",
+				"PAN-OS 6.1.2",
+				"PAN-OS 6.1.1",
+				"PAN-OS 6.1.0",
+				"PAN-OS 6.1",
+				"PAN-OS 6.0.14",
+				"PAN-OS 6.0.13",
+				"PAN-OS 6.0.12",
+				"PAN-OS 6.0.11",
+				"PAN-OS 6.0.10",
+				"PAN-OS 6.0.9",
+				"PAN-OS 6.0.8",
+				"PAN-OS 6.0.7",
+				"PAN-OS 6.0.6",
+				"PAN-OS 6.0.5-h3",
+				"PAN-OS 6.0.5-h2",
+				"PAN-OS 6.0.5-h1",
+				"PAN-OS 6.0.5",
+				"PAN-OS 6.0.4",
+				"PAN-OS 6.0.3",
+				"PAN-OS 6.0.2",
+				"PAN-OS 6.0.1",
+				"PAN-OS 6.0.0",
+				"PAN-OS 6.0",
+				"PAN-OS 5.1",
+				"PAN-OS 5.0"
+			]
+		}
+	}
+}

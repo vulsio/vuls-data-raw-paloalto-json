@@ -1,0 +1,155 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2016-0008",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2016-06-27T17:30:00.000Z",
+		"dateReserved": "2016-06-27T17:30:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "PAN-OS API denial of service",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks firewalls offer an API to query and modify the configuration of the device. While access to this API is protected by the use of an API key, an issue was recently identified leading to a potential unauthenticated denial of service attack. (Ref #91728)\nThe API is hosted on a dedicated management interface and, while this issue can result in a DoS attack of the API, it doesn’t compromise the security functionality of the device.\nThis issue affects PAN-OS 7.0.1 to PAN-OS 7.0.7",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>Palo Alto Networks firewalls offer an API to query and modify the configuration of the device. While access to this API is protected by the use of an API key, an issue was recently identified leading to a potential unauthenticated denial of service attack. (Ref #91728)\nThe API is hosted on a dedicated management interface and, while this issue can result in a DoS attack of the API, it doesn’t compromise the security functionality of the device.\nThis issue affects PAN-OS 7.0.1 to PAN-OS 7.0.7</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "PAN-OS",
+					"versions": [
+						{
+							"status": "unaffected",
+							"versionType": "custom",
+							"version": "7.0.8",
+							"lessThan": "7.0*",
+							"changes": [
+								{
+									"at": "7.0.1",
+									"status": "affected"
+								}
+							]
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "text",
+							"lang": "en",
+							"description": "PAN-OS API denial of service"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"privilegesRequired": "NONE",
+						"userInteraction": "NONE",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "NONE",
+						"integrityImpact": "NONE",
+						"availabilityImpact": "LOW",
+						"baseScore": 5.3,
+						"baseSeverity": "MEDIUM"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "Exploitation of this issue is only available to personnel with access to the management interface on the device. Palo Alto Networks recommends the following best practice implementation: deploy the management interface on an out-of-band network and separate from inline traffic processing.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "Exploitation of this issue is only available to personnel with access to the management interface on the device. Palo Alto Networks recommends the following best practice implementation: deploy the management interface on an out-of-band network and separate from inline traffic processing."
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "PAN-OS 7.0.8 and later",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "PAN-OS 7.0.8 and later"
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2016-0008"
+				}
+			],
+			"credits": [
+				{
+					"lang": "en",
+					"value": "Tenable Network Security"
+				}
+			],
+			"source": {
+				"advisory": "PAN-SA-2016-0008",
+				"defect": [
+					"91728"
+				],
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2016-06-27T17:30:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			},
+			"x_affectedList": [
+				"PAN-OS 7.0.19",
+				"PAN-OS 7.0.18",
+				"PAN-OS 7.0.17",
+				"PAN-OS 7.0.16",
+				"PAN-OS 7.0.15",
+				"PAN-OS 7.0.14",
+				"PAN-OS 7.0.13",
+				"PAN-OS 7.0.12",
+				"PAN-OS 7.0.11",
+				"PAN-OS 7.0.10",
+				"PAN-OS 7.0.9",
+				"PAN-OS 7.0.8",
+				"PAN-OS 7.0.7",
+				"PAN-OS 7.0.6",
+				"PAN-OS 7.0.5-h2",
+				"PAN-OS 7.0.5-h1",
+				"PAN-OS 7.0.5",
+				"PAN-OS 7.0.4",
+				"PAN-OS 7.0.3",
+				"PAN-OS 7.0.2",
+				"PAN-OS 7.0.1",
+				"PAN-OS 7.0"
+			]
+		}
+	}
+}

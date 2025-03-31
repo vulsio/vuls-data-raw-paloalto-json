@@ -1,0 +1,171 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2016-0026",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2016-10-04T16:30:00.000Z",
+		"dateReserved": "2016-10-04T16:30:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "GlobalProtect Portal Version Disclosure",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "A Palo Alto Networks firewall configured to host the GlobalProtect Portal advertises its running PAN-OS version. (Ref # PAN-60568/99786)\nThis information disclosure does not lead to a device compromise or a disallowed access.\nThis issue affects PAN-OS 7.0.9 and earlier; PAN-OS 7.1.4 and earlier",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>A Palo Alto Networks firewall configured to host the GlobalProtect Portal advertises its running PAN-OS version. (Ref # PAN-60568/99786)\nThis information disclosure does not lead to a device compromise or a disallowed access.\nThis issue affects PAN-OS 7.0.9 and earlier; PAN-OS 7.1.4 and earlier</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "PAN-OS",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "7.0",
+							"lessThanOrEqual": "7.0.9",
+							"changes": [
+								{
+									"at": "7.0.10",
+									"status": "unaffected"
+								}
+							]
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "7.1",
+							"lessThanOrEqual": "7.1.4",
+							"changes": [
+								{
+									"at": "7.1.5",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "text",
+							"lang": "en",
+							"description": "GlobalProtect Portal Version Disclosure"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"privilegesRequired": "NONE",
+						"userInteraction": "NONE",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "NONE",
+						"integrityImpact": "NONE",
+						"availabilityImpact": "NONE",
+						"baseScore": 0,
+						"baseSeverity": "NONE"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "The GlobalProtect Portal requires installation on only a single device of the entire security architecture. Customers concerned by this information disclosure can choose to disable the web interface portal in order to deflect attention away from the presence of GlobalProtect.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "The GlobalProtect Portal requires installation on only a single device of the entire security architecture. Customers concerned by this information disclosure can choose to disable the web interface portal in order to deflect attention away from the presence of GlobalProtect."
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "PAN-OS 7.0.10 and later; PAN-OS 7.1.5 and later",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "PAN-OS 7.0.10 and later; PAN-OS 7.1.5 and later"
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2016-0026"
+				}
+			],
+			"credits": [
+				{
+					"lang": "en",
+					"value": "Mikail Tunç"
+				}
+			],
+			"source": {
+				"advisory": "PAN-SA-2016-0026",
+				"defect": [
+					"PAN-60568",
+					"99786"
+				],
+				"discovery": "UNKNOWN"
+			},
+			"datePublic": "2016-10-04T16:30:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			},
+			"x_affectedList": [
+				"PAN-OS 7.1.4",
+				"PAN-OS 7.1.3",
+				"PAN-OS 7.1.2",
+				"PAN-OS 7.1.1",
+				"PAN-OS 7.1.0",
+				"PAN-OS 7.1",
+				"PAN-OS 7.0.9",
+				"PAN-OS 7.0.8",
+				"PAN-OS 7.0.7",
+				"PAN-OS 7.0.6",
+				"PAN-OS 7.0.5-h2",
+				"PAN-OS 7.0.5-h1",
+				"PAN-OS 7.0.5",
+				"PAN-OS 7.0.4",
+				"PAN-OS 7.0.3",
+				"PAN-OS 7.0.2",
+				"PAN-OS 7.0.1",
+				"PAN-OS 7.0"
+			]
+		}
+	}
+}

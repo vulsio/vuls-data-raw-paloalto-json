@@ -1,0 +1,123 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2016-0018",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2016-08-12T22:00:00.000Z",
+		"dateReserved": "2016-08-12T22:00:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "WildFire Cross-Site Scripting Vulnerability",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "A Palo Alto Networks firewall displaying a WildFire cloud integrated report is susceptible to a cross-site scripting condition (Ref # WTC-3355).\nA sample analyzed by the WildFire cloud could trigger a cross-site scripting attack against a firewall administrator who is displaying a WildFire report. This vulnerability is restricted to the context in which the report is parsed by the cloud.\nThis issue affects Palo Alto Networks hosted WildFire cloud from January to August 9th 2016",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>A Palo Alto Networks firewall displaying a WildFire cloud integrated report is susceptible to a cross-site scripting condition (Ref # WTC-3355).\nA sample analyzed by the WildFire cloud could trigger a cross-site scripting attack against a firewall administrator who is displaying a WildFire report. This vulnerability is restricted to the context in which the report is parsed by the cloud.\nThis issue affects Palo Alto Networks hosted WildFire cloud from January to August 9th 2016</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "WildFire Cloud",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "current"
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "text",
+							"lang": "en",
+							"description": "WildFire Cross-Site Scripting Vulnerability"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"privilegesRequired": "NONE",
+						"userInteraction": "REQUIRED",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "LOW",
+						"integrityImpact": "LOW",
+						"availabilityImpact": "LOW",
+						"baseScore": 6.3,
+						"baseSeverity": "MEDIUM"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "N/A",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "N/A"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks hosted WildFire cloud starting August 10th 2016. Users do not need to take action.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "Palo Alto Networks hosted WildFire cloud starting August 10th 2016. Users do not need to take action."
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2016-0018"
+				}
+			],
+			"credits": [
+				{
+					"lang": "en",
+					"value": "Alexander Fischer, DCSO Deutsche Cyber-Sicherheitsorganisation"
+				}
+			],
+			"source": {
+				"advisory": "PAN-SA-2016-0018",
+				"defect": [
+					"WTC-3355"
+				],
+				"discovery": "UNKNOWN"
+			},
+			"datePublic": "2016-08-12T22:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			}
+		}
+	}
+}

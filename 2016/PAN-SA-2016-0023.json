@@ -1,0 +1,170 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2016-0023",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2016-09-02T21:00:00.000Z",
+		"dateReserved": "2016-09-02T21:00:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "OpenSSL Vulnerabilities",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "The OpenSSL library embedded in the GlobalProtect™ agent, TerminalServer™ agent and UserID™ agent is affected by the following public vulnerabilities: CVE-2016-2105, CVE-2016-2106, CVE-2016-2107, CVE-2016-2109, and CVE-2016-2176 (Ref # 100669, 100133, PAN-60833).\nAt the time of this advisory and in the context of GlobalProtect, TerminalServer and UserID, no public exploitation of these vulnerabilities are known.\nThis issue affects GlobalProtect agent 3.1.0 and earlier; TerminalServer agent 7.0.5 and earlier; UserID agent 7.0.5 and earlier",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>The OpenSSL library embedded in the GlobalProtect™ agent, TerminalServer™ agent and UserID™ agent is affected by the following public vulnerabilities: CVE-2016-2105, CVE-2016-2106, CVE-2016-2107, CVE-2016-2109, and CVE-2016-2176 (Ref # 100669, 100133, PAN-60833).\nAt the time of this advisory and in the context of GlobalProtect, TerminalServer and UserID, no public exploitation of these vulnerabilities are known.\nThis issue affects GlobalProtect agent 3.1.0 and earlier; TerminalServer agent 7.0.5 and earlier; UserID agent 7.0.5 and earlier</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "GlobalProtect App",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "3.1",
+							"lessThanOrEqual": "3.1.0",
+							"changes": [
+								{
+									"at": "3.1.1",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Terminal Server Agent",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "7.0",
+							"lessThanOrEqual": "7.0.5",
+							"changes": [
+								{
+									"at": "7.0.6",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "User-ID Agent",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "7.0",
+							"lessThanOrEqual": "7.0.5",
+							"changes": [
+								{
+									"at": "7.0.6",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "CWE",
+							"lang": "en",
+							"description": "CWE-119 Improper Restriction of Operations within the Bounds of a Memory Buffer",
+							"cweId": "CWE-119"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"privilegesRequired": "NONE",
+						"userInteraction": "NONE",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "LOW",
+						"integrityImpact": "NONE",
+						"availabilityImpact": "HIGH",
+						"baseScore": 8.2,
+						"baseSeverity": "HIGH"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "N/A",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "N/A"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "GlobalProtect App 3.1.1 and later; Terminal Server Agent 7.0.6 and later; User-ID Agent 7.0.6 and later",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "GlobalProtect App 3.1.1 and later; Terminal Server Agent 7.0.6 and later; User-ID Agent 7.0.6 and later"
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2016-0023"
+				}
+			],
+			"source": {
+				"advisory": "PAN-SA-2016-0023",
+				"defect": [
+					"100669",
+					"100133",
+					"PAN-60833"
+				],
+				"discovery": "UNKNOWN"
+			},
+			"datePublic": "2016-09-02T21:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			},
+			"x_affectedList": [
+				"User-ID Agent 7.0",
+				"Terminal Server Agent 7.0",
+				"GlobalProtect App 3.1.0",
+				"GlobalProtect App 3.1"
+			]
+		}
+	}
+}

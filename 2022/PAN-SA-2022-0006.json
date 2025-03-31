@@ -1,0 +1,414 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2022-0006",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2022-10-31T00:00:00",
+		"dateUpdated": "2022-11-09T00:00:00.000000Z",
+		"dateReserved": "2022-10-31T00:00:00"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Impact of OpenSSL 3.0 Vulnerabilities CVE-2022-3786 and CVE-2022-3602",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "The OpenSSL Project has published two high severity vulnerabilities CVE-2022-3786 and CVE-2022-3602 that affect OpenSSL versions 3.0.0 through 3.0.6 on November 1st, 2022.\n\nThe Palo Alto Networks Product Security Assurance team has evaluated and confirmed that all products and services are not impacted by these vulnerabilities.",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>The OpenSSL Project has published two high severity vulnerabilities CVE-2022-3786 and CVE-2022-3602 that affect OpenSSL versions 3.0.0 through 3.0.6 on November 1st, 2022.\n\nThe Palo Alto Networks Product Security Assurance team has evaluated and confirmed that all products and services are not impacted by these vulnerabilities.</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "PAN-OS",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Cortex XDR Agent",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "GlobalProtect App",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Cortex XSOAR",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "WildFire Appliance (WF-500)",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Expanse",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Okyo Garde",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Palo Alto Networks App for Splunk",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Prisma Cloud Compute",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Expedition Migration Tool",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "IoT Security",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "User-ID Agent",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Exact Data Matching CLI",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Bridgecrew",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Cortex Xpanse",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Enterprise Data Loss Prevention",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Prisma SD-WAN (CloudGenix)",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Prisma SD-WAN ION",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "SaaS Security",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Cortex Data Lake",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "AutoFocus",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "WildFire Cloud",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Prisma Cloud",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Cloud NGFW",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Prisma Access",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Cortex XDR",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV4_0": {
+						"version": "4.0",
+						"vectorString": "CVSS:4.0/AV:P/AC:H/AT:N/PR:H/UI:A/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+						"baseScore": 0,
+						"baseSeverity": "NONE",
+						"attackVector": "PHYSICAL",
+						"attackComplexity": "HIGH",
+						"attackRequirements": "NONE",
+						"privilegesRequired": "HIGH",
+						"userInteraction": "ACTIVE",
+						"vulnConfidentialityImpact": "HIGH",
+						"vulnIntegrityImpact": "HIGH",
+						"vulnAvailabilityImpact": "HIGH",
+						"subConfidentialityImpact": "HIGH",
+						"subIntegrityImpact": "HIGH",
+						"subAvailabilityImpact": "HIGH",
+						"Safety": "NOT_DEFINED",
+						"Automatable": "NOT_DEFINED",
+						"Recovery": "NOT_DEFINED",
+						"valueDensity": "NOT_DEFINED",
+						"vulnerabilityResponseEffort": "NOT_DEFINED",
+						"providerUrgency": "NOT_DEFINED"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "Customers with a Threat Prevention subscription can block known attacks for CVE-2022-3602 by enabling Threat ID 93212 (Applications and Threats content update 8638). This mitigation reduces the risk of exploitation from known exploits.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "Customers with a Threat Prevention subscription can block known attacks for CVE-2022-3602 by enabling Threat ID 93212 (Applications and Threats content update 8638). This mitigation reduces the risk of exploitation from known exploits."
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "No software updates are required at this time.\n\nNOTE: Cortex XDR Broker VM versions earlier than Cortex XDR Broker VM 17.4.1 contain an affected version of the OpenSSL 3.0 library but are not impacted. There are no scenarios in Cortex XDR Broker VM software that enable successful exploitation of these vulnerabilities. The OpenSSL 3.0 library has been removed from Cortex XDR Broker VM 17.4.1 and later versions for security assurance. ",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "No software updates are required at this time.\n\nNOTE: Cortex XDR Broker VM versions earlier than Cortex XDR Broker VM 17.4.1 contain an affected version of the OpenSSL 3.0 library but are not impacted. There are no scenarios in Cortex XDR Broker VM software that enable successful exploitation of these vulnerabilities. The OpenSSL 3.0 library has been removed from Cortex XDR Broker VM 17.4.1 and later versions for security assurance. "
+					}
+				}
+			],
+			"exploits": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks is not aware of any malicious exploitation of this issue on any of our products.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "Palo Alto Networks is not aware of any malicious exploitation of this issue on any of our products."
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2022-0006"
+				},
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://www.openssl.org/news/secadv/20221101.txt"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2022-10-31T23:38:00.000Z",
+					"lang": "eng",
+					"value": "Initial publication"
+				},
+				{
+					"time": "2022-11-01T16:30:00.000Z",
+					"lang": "eng",
+					"value": "Updated advisory to reference the CVEs"
+				},
+				{
+					"time": "2022-11-02T04:45:00.000Z",
+					"lang": "eng",
+					"value": "A threat prevention signature is now available for CVE-2022-3602"
+				},
+				{
+					"time": "2022-11-03T02:40:00.000Z",
+					"lang": "eng",
+					"value": "Cortex XDR Broker VM 17.4.1 is released and removes OpenSSL 3.0 for security assurance"
+				},
+				{
+					"time": "2022-11-09T17:00:00.000Z",
+					"lang": "eng",
+					"value": "Investigation is complete"
+				}
+			],
+			"source": {
+				"advisory": "PAN-SA-2022-0006",
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2022-10-31T23:38:00.000Z",
+			"x_generator": {
+				"engine": "vulnogram 0.1.0-rc1"
+			}
+		}
+	}
+}

@@ -1,0 +1,166 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2024-0006",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2024-07-10T00:00:00",
+		"dateUpdated": "2024-07-10T00:00:00.000000Z",
+		"dateReserved": "2024-07-10T00:00:00"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Informational Bulletin: Expedition Installation Script Resets Root Password",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "A hardcoded password in the Palo Alto Networks Expedition VM installation script may allow remote attackers to elevate their privileges to root access on Expedition VMs that are running Expedition, if not changed as per the installation instructions.\n\nThe updated version of the script no longer resets the password, eliminating the need to manually change the password after installation.\n\nAdditional information can be found in the Expedition installation guide and hardening guide, which recommend both changing the root password and using key-based SSH authentication: https://live.paloaltonetworks.com/t5/expedition-articles/expedition-documentation/ta-p/215619",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>A hardcoded password in the Palo Alto Networks Expedition VM installation script may allow remote attackers to elevate their privileges to root access on Expedition VMs that are running Expedition, if not changed as per the installation instructions.\n\nThe updated version of the script no longer resets the password, eliminating the need to manually change the password after installation.\n\nAdditional information can be found in the Expedition installation guide and hardening guide, which recommend both changing the root password and using key-based SSH authentication: https://live.paloaltonetworks.com/t5/expedition-articles/expedition-documentation/ta-p/215619</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Expedition",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "initSetup_v2.0",
+							"lessThan": "commit date 20240605",
+							"changes": [
+								{
+									"at": "commit date 20240605",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "CWE",
+							"lang": "en",
+							"description": "CWE-798 Use of Hard-coded Credentials",
+							"cweId": "CWE-798"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV4_0": {
+						"version": "4.0",
+						"vectorString": "CVSS:4.0/AV:P/AC:H/AT:P/PR:H/UI:A/VC:N/VI:N/VA:N/SC:N/SI:N/SA:N",
+						"baseScore": 0,
+						"baseSeverity": "NONE",
+						"attackVector": "PHYSICAL",
+						"attackComplexity": "HIGH",
+						"attackRequirements": "PRESENT",
+						"privilegesRequired": "HIGH",
+						"userInteraction": "ACTIVE",
+						"vulnConfidentialityImpact": "NONE",
+						"vulnIntegrityImpact": "NONE",
+						"vulnAvailabilityImpact": "NONE",
+						"subConfidentialityImpact": "NONE",
+						"subIntegrityImpact": "NONE",
+						"subAvailabilityImpact": "NONE",
+						"Safety": "NOT_DEFINED",
+						"Automatable": "NOT_DEFINED",
+						"Recovery": "NOT_DEFINED",
+						"valueDensity": "NOT_DEFINED",
+						"vulnerabilityResponseEffort": "NOT_DEFINED",
+						"providerUrgency": "NOT_DEFINED"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "This issue requires the remote attacker to know the password of the root account used in the Expedition VM. You can mitigate this issue by changing the default password of the Expedition VM to a password with industry standard complexity.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "This issue requires the remote attacker to know the password of the root account used in the Expedition VM. You can mitigate this issue by changing the default password of the Expedition VM to a password with industry standard complexity."
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "The password is no longer reset in the Expedition initSetup_v2.0 script with a commit date 20240605, and all later Expedition VM script versions. The commit date of the initSetup_v2 script (https://conversionupdates.paloaltonetworks.com/expedition1_Installer_latest.tgz) can be found at the top of the script as a comment.\n\nIf you installed Expedition before June 5, 2024 and did not change the root password after the installation concluded, you should verify the root password is what you expect.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "The password is no longer reset in the Expedition initSetup_v2.0 script with a commit date 20240605, and all later Expedition VM script versions. The commit date of the initSetup_v2 script (https://conversionupdates.paloaltonetworks.com/expedition1_Installer_latest.tgz) can be found at the top of the script as a comment.\n\nIf you installed Expedition before June 5, 2024 and did not change the root password after the installation concluded, you should verify the root password is what you expect."
+					}
+				}
+			],
+			"exploits": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks is not aware of any malicious exploitation of this issue.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "Palo Alto Networks is not aware of any malicious exploitation of this issue."
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2024-0006"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2024-07-10T16:00:00.000Z",
+					"lang": "eng",
+					"value": "Initial publication"
+				}
+			],
+			"credits": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks thanks Frank \"5y5tem5\" Mileto for discovering and reporting this issue."
+				}
+			],
+			"source": {
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2024-07-10T16:00:00.000Z",
+			"x_generator": {
+				"engine": "vulnogram 0.1.0-rc1"
+			},
+			"x_affectedList": [
+				"Expedition initSetup_v2.0"
+			]
+		}
+	}
+}

@@ -1,0 +1,139 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2022-0003",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2022-08-10T00:00:00",
+		"dateUpdated": "2022-08-10T00:00:00.000000Z",
+		"dateReserved": "2022-08-10T00:00:00"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Informational: Cortex XDR Agent: Proof of Concept (PoC) Reduces Effectiveness of Anti-Ransomware Protection Module",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "The Palo Alto Networks Product Security Assurance team is aware of a specifically crafted proof of concept (PoC) that reduces the effectiveness of the Cortex XDR agent Anti-Ransomware endpoint protection module. The specific technique used in the PoC does not impact behavioral threat protection, malware scanning, or other endpoint protection capabilities that detect security events and prevent attacks.",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>The Palo Alto Networks Product Security Assurance team is aware of a specifically crafted proof of concept (PoC) that reduces the effectiveness of the Cortex XDR agent Anti-Ransomware endpoint protection module. The specific technique used in the PoC does not impact behavioral threat protection, malware scanning, or other endpoint protection capabilities that detect security events and prevent attacks.</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Cortex XDR Agent",
+					"versions": [
+						{
+							"status": "affected",
+							"version": "All agents with a content update earlier than CU-610"
+						},
+						{
+							"status": "unaffected",
+							"version": "All agents with CU-610 or a later content update"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:P/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:N",
+						"attackVector": "PHYSICAL",
+						"attackComplexity": "HIGH",
+						"privilegesRequired": "HIGH",
+						"userInteraction": "REQUIRED",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "NONE",
+						"integrityImpact": "NONE",
+						"availabilityImpact": "NONE",
+						"baseScore": 0,
+						"baseSeverity": "NONE"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "This technique is detected by Cortex XDR agents on Windows with content update 610 and later content update versions.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "This technique is detected by Cortex XDR agents on Windows with content update 610 and later content update versions."
+					}
+				}
+			],
+			"exploits": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks is not aware of any malicious exploitation of this issue. However, details of this technique are expected to become publicly available.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "Palo Alto Networks is not aware of any malicious exploitation of this issue. However, details of this technique are expected to become publicly available."
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2022-0003"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2022-08-10T16:00:00.000Z",
+					"lang": "eng",
+					"value": "Initial publication"
+				}
+			],
+			"credits": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks thanks Itay Migdal at SafeBreach for discovering and reporting this issue."
+				}
+			],
+			"source": {
+				"defect": [
+					"CTNGTR-6395"
+				],
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2022-08-10T16:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			},
+			"x_affectedList": [
+				"Cortex XDR Agent 7.7",
+				"Cortex XDR Agent 7.6",
+				"Cortex XDR Agent 7.5 CE",
+				"Cortex XDR Agent 7.5",
+				"Cortex XDR Agent 7.4",
+				"Cortex XDR Agent 6.1",
+				"Cortex XDR Agent"
+			]
+		}
+	}
+}

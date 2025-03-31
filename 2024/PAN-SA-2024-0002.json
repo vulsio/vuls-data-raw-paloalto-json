@@ -1,0 +1,196 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2024-0002",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2024-02-22T00:00:00",
+		"dateUpdated": "2024-02-22T00:00:00.000000Z",
+		"dateReserved": "2024-02-22T00:00:00"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Impact of Leaky Vessels Vulnerabilities (CVE-2024-21626, CVE-2024-23651, CVE-2024-23652, and CVE-2024-23653)",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "The Palo Alto Networks Product Security Assurance team has evaluated the four vulnerabilities in Open Container Initiative's runc and Moby BuildKit software (collectively known as \"Leaky Vessels\") as it relates to our products.\n\nWhile Cortex XSOAR 8, Cortex XSOAR 6 Hosted, and Prisma Cloud Compute rely on this software, they do not offer any scenarios required for the successful exploitation of these vulnerabilities and are not impacted.\n\nCortex XSOAR 6 On Premise deployments using Docker 25.0.2 or later are not impacted.\n\nAt present, no other Palo Alto Networks products are known to contain the vulnerable software packages and be impacted by these issues.\n\nProtecting our customers is our highest priority. Palo Alto Networks and its Unit 42 threat research team have closely monitored all developments. You can find technical details, regular updates and guidance here: https://www.paloaltonetworks.com/blog/prisma-cloud/leaky-vessels-vulnerabilities-container-escape/.",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>The Palo Alto Networks Product Security Assurance team has evaluated the four vulnerabilities in Open Container Initiative's runc and Moby BuildKit software (collectively known as \"Leaky Vessels\") as it relates to our products.\n\nWhile Cortex XSOAR 8, Cortex XSOAR 6 Hosted, and Prisma Cloud Compute rely on this software, they do not offer any scenarios required for the successful exploitation of these vulnerabilities and are not impacted.\n\nCortex XSOAR 6 On Premise deployments using Docker 25.0.2 or later are not impacted.\n\nAt present, no other Palo Alto Networks products are known to contain the vulnerable software packages and be impacted by these issues.\n\nProtecting our customers is our highest priority. Palo Alto Networks and its Unit 42 threat research team have closely monitored all developments. You can find technical details, regular updates and guidance here: https://www.paloaltonetworks.com/blog/prisma-cloud/leaky-vessels-vulnerabilities-container-escape/.</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Cortex XSOAR",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "6 On Premise All using Docker 25.0.2 or later"
+						},
+						{
+							"status": "unaffected",
+							"version": "6 Hosted All"
+						},
+						{
+							"status": "unaffected",
+							"version": "8 All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Prisma Cloud Compute",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "CWE",
+							"lang": "en",
+							"description": "CWE-403 Exposure of File Descriptor to Unintended Control Sphere ('File Descriptor Leak')",
+							"cweId": "CWE-403"
+						}
+					]
+				},
+				{
+					"descriptions": [
+						{
+							"type": "CWE",
+							"lang": "en",
+							"description": "CWE-668 Exposure of Resource to Wrong Sphere",
+							"cweId": "CWE-668"
+						}
+					]
+				},
+				{
+					"descriptions": [
+						{
+							"type": "CWE",
+							"lang": "en",
+							"description": "CWE-362 Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')",
+							"cweId": "CWE-362"
+						}
+					]
+				},
+				{
+					"descriptions": [
+						{
+							"type": "CWE",
+							"lang": "en",
+							"description": "CWE-22 Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+							"cweId": "CWE-22"
+						}
+					]
+				},
+				{
+					"descriptions": [
+						{
+							"type": "CWE",
+							"lang": "en",
+							"description": "CWE-863 Incorrect Authorization",
+							"cweId": "CWE-863"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV4_0": {
+						"version": "4.0",
+						"vectorString": "CVSS:4.0/AV:P/AC:H/AT:P/PR:H/UI:A/VC:N/VI:N/VA:N/SC:N/SI:N/SA:N",
+						"baseScore": 0,
+						"baseSeverity": "NONE",
+						"attackVector": "PHYSICAL",
+						"attackComplexity": "HIGH",
+						"attackRequirements": "PRESENT",
+						"privilegesRequired": "HIGH",
+						"userInteraction": "ACTIVE",
+						"vulnConfidentialityImpact": "NONE",
+						"vulnIntegrityImpact": "NONE",
+						"vulnAvailabilityImpact": "NONE",
+						"subConfidentialityImpact": "NONE",
+						"subIntegrityImpact": "NONE",
+						"subAvailabilityImpact": "NONE",
+						"Safety": "NOT_DEFINED",
+						"Automatable": "NOT_DEFINED",
+						"Recovery": "NOT_DEFINED",
+						"valueDensity": "NOT_DEFINED",
+						"vulnerabilityResponseEffort": "NOT_DEFINED",
+						"providerUrgency": "NOT_DEFINED"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "Cortex XSOAR 6 On Premise deployments should ensure use of Docker 25.0.2 or higher. For additional guidance in hardening Docker with Cortex XSOAR, please see https://docs-cortex.paloaltonetworks.com/r/Cortex-XSOAR/6.5/Cortex-XSOAR-Administrator-Guide/Docker-Hardening-Guide.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "Cortex XSOAR 6 On Premise deployments should ensure use of Docker 25.0.2 or higher. For additional guidance in hardening Docker with Cortex XSOAR, please see https://docs-cortex.paloaltonetworks.com/r/Cortex-XSOAR/6.5/Cortex-XSOAR-Administrator-Guide/Docker-Hardening-Guide."
+					}
+				}
+			],
+			"exploits": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks is not aware of any malicious exploitation of these issues in any of our products. Proof of concepts for CVE-2024-21626 have been observed.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "Palo Alto Networks is not aware of any malicious exploitation of these issues in any of our products. Proof of concepts for CVE-2024-21626 have been observed."
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2024-0002"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2024-02-22T02:00:00.000Z",
+					"lang": "eng",
+					"value": "Initial publication"
+				}
+			],
+			"source": {
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2024-02-22T02:00:00.000Z",
+			"x_generator": {
+				"engine": "vulnogram 0.1.0-rc1"
+			}
+		}
+	}
+}

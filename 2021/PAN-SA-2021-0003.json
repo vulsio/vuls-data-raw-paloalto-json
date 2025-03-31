@@ -1,0 +1,134 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2021-0003",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2021-05-10T00:00:00",
+		"dateUpdated": "2021-05-12T00:00:00.000000Z",
+		"dateReserved": "2021-05-10T00:00:00"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Informational: Impact of the NAME:WRECK DNS vulnerabilities",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "The Palo Alto Networks Product Security Assurance team evaluated the NAME:WRECK DNS vulnerabilities impacting multiple TCP/IP software stack implementations.\n\nPAN-OS software and Prisma SD-WAN (CloudGenix) devices do not utilize the IPNet, Nucleus NET, FreeBSD, or NetX TCP/IP software stacks related to these vulnerabilities. As a result, there is no known security impact for these vulnerabilities in PAN-OS software or Prisma SD-WAN (CloudGenix) devices.",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>The Palo Alto Networks Product Security Assurance team evaluated the NAME:WRECK DNS vulnerabilities impacting multiple TCP/IP software stack implementations.\n\nPAN-OS software and Prisma SD-WAN (CloudGenix) devices do not utilize the IPNet, Nucleus NET, FreeBSD, or NetX TCP/IP software stacks related to these vulnerabilities. As a result, there is no known security impact for these vulnerabilities in PAN-OS software or Prisma SD-WAN (CloudGenix) devices.</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "PAN-OS",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Prisma SD-WAN (CloudGenix)",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV4_0": {
+						"version": "4.0",
+						"vectorString": "CVSS:4.0/AV:P/AC:H/AT:N/PR:H/UI:A/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+						"baseScore": 0,
+						"baseSeverity": "NONE",
+						"attackVector": "PHYSICAL",
+						"attackComplexity": "HIGH",
+						"attackRequirements": "NONE",
+						"privilegesRequired": "HIGH",
+						"userInteraction": "ACTIVE",
+						"vulnConfidentialityImpact": "HIGH",
+						"vulnIntegrityImpact": "HIGH",
+						"vulnAvailabilityImpact": "HIGH",
+						"subConfidentialityImpact": "HIGH",
+						"subIntegrityImpact": "HIGH",
+						"subAvailabilityImpact": "HIGH",
+						"Safety": "NOT_DEFINED",
+						"Automatable": "NOT_DEFINED",
+						"Recovery": "NOT_DEFINED",
+						"valueDensity": "NOT_DEFINED",
+						"vulnerabilityResponseEffort": "NOT_DEFINED",
+						"providerUrgency": "NOT_DEFINED"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "No product updates are required for these issues.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "No product updates are required for these issues."
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2021-0003"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2021-05-10T16:00:00.000Z",
+					"lang": "eng",
+					"value": "Initial publication"
+				},
+				{
+					"time": "2021-05-12T15:30:00.000Z",
+					"lang": "eng",
+					"value": "Updated description for clarity"
+				}
+			],
+			"source": {
+				"defect": [
+					"PAN-169343",
+					"PAN-169120"
+				],
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2021-05-10T19:00:00.000Z",
+			"x_generator": {
+				"engine": "vulnogram 0.1.0-rc1"
+			}
+		}
+	}
+}

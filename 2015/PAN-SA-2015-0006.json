@@ -1,0 +1,140 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2015-0006",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2015-11-09T08:00:00.000Z",
+		"dateReserved": "2015-11-09T08:00:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "API key automatic revocation",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "An issue has been identified in PAN-OS that prevents old management API keys for local administrator accounts from being invalidated upon password change until the device is rebooted. This issue can create a period of time during which an administrator changes the account password, thus creating a new API key, but the old API key is still valid until device reboot.\nThis issue affects the management interface of the device. Network security best practices suggest administering security devices from an out-of-band network, reducing the exposed attack surface.\nThis issue affects PAN-OS versions prior to PAN-OS 7.0.2 and PAN-OS 6.1.7",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>An issue has been identified in PAN-OS that prevents old management API keys for local administrator accounts from being invalidated upon password change until the device is rebooted. This issue can create a period of time during which an administrator changes the account password, thus creating a new API key, but the old API key is still valid until device reboot.\nThis issue affects the management interface of the device. Network security best practices suggest administering security devices from an out-of-band network, reducing the exposed attack surface.\nThis issue affects PAN-OS versions prior to PAN-OS 7.0.2 and PAN-OS 6.1.7</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "PAN-OS",
+					"versions": [
+						{
+							"status": "unaffected",
+							"versionType": "custom",
+							"version": "7.0.2",
+							"lessThan": "7.0*"
+						},
+						{
+							"status": "unaffected",
+							"versionType": "custom",
+							"version": "6.1.7",
+							"lessThan": "6.1*"
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "text",
+							"lang": "en",
+							"description": "API key automatic revocation"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:L/A:N",
+						"attackVector": "NETWORK",
+						"attackComplexity": "HIGH",
+						"privilegesRequired": "HIGH",
+						"userInteraction": "NONE",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "NONE",
+						"integrityImpact": "LOW",
+						"availabilityImpact": "NONE",
+						"baseScore": 2.2,
+						"baseSeverity": "LOW"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "This issue only affects local device administrator accounts, not remote accounts such as LDAP or RADIUS.  Administrators are advised to upgrade to PAN-OS 7.0.2 or 6.1.7 to correct the issue. As a mitigation for affected software versions, administrators may restart the management server of the device after administrator account password changes using the below cli command:\n> debug software restart process management-server",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "This issue only affects local device administrator accounts, not remote accounts such as LDAP or RADIUS.  Administrators are advised to upgrade to PAN-OS 7.0.2 or 6.1.7 to correct the issue. As a mitigation for affected software versions, administrators may restart the management server of the device after administrator account password changes using the below cli command:\n> debug software restart process management-server"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "PAN-OS 7.0.2, PAN-OS 6.1.7 and subsequent releases.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "PAN-OS 7.0.2, PAN-OS 6.1.7 and subsequent releases."
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2015-0006"
+				}
+			],
+			"credits": [
+				{
+					"lang": "en",
+					"value": "Raul Garcia, Dell SecureWorks"
+				}
+			],
+			"source": {
+				"advisory": "PAN-SA-2015-0006",
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2015-11-09T08:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			},
+			"x_affectedList": [
+				"PAN-OS 7.0.1",
+				"PAN-OS 7.0",
+				"PAN-OS 6.1.6",
+				"PAN-OS 6.1.5",
+				"PAN-OS 6.1.4",
+				"PAN-OS 6.1.3",
+				"PAN-OS 6.1.2",
+				"PAN-OS 6.1.1",
+				"PAN-OS 6.1.0",
+				"PAN-OS 6.1"
+			]
+		}
+	}
+}

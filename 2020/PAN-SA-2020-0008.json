@@ -1,0 +1,155 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2020-0008",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2020-08-12T00:00:00",
+		"dateUpdated": "2020-08-12T00:00:00.000000Z",
+		"dateReserved": "2020-08-12T00:00:00"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Informational: BootHole Vulnerability Impact on Palo Alto Networks PAN-OS Software",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks is aware of the vulnerability known as BootHole (CVE-2020-10713) that affects the Grand Unified Bootloader (GRUB) used in Palo Alto Networks PAN-OS software.\n\nBootHole is a buffer overflow vulnerability that occurs in GRUB2 when parsing an attacker-controlled grub.cfg file. This vulnerability enables arbitrary code execution within the boot environment, which allows persistent control of the system.\n\nIt is not possible for malicious actors or PAN-OS administrators to exploit this vulnerability under normal conditions. Administrators do not have access to the grub configuration file nor do they have permission to modify it. An attacker would need to first compromise the system and then get the root Linux privileges necessary to perform these actions before they could exploit this vulnerability. The BootHole vulnerability itself does not allow an attacker to compromise PAN-OS software.\n\nPalo Alto Networks is not aware of any malicious exploitation of this vulnerability.\n\nThe Palo Alto Networks Product Security Assurance team evaluated this potential vulnerability and determined that the scenarios required for successful exploitation of the BootHole vulnerability do not exist on PAN-OS software under normal conditions.\n",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>Palo Alto Networks is aware of the vulnerability known as BootHole (CVE-2020-10713) that affects the Grand Unified Bootloader (GRUB) used in Palo Alto Networks PAN-OS software.\n\nBootHole is a buffer overflow vulnerability that occurs in GRUB2 when parsing an attacker-controlled grub.cfg file. This vulnerability enables arbitrary code execution within the boot environment, which allows persistent control of the system.\n\nIt is not possible for malicious actors or PAN-OS administrators to exploit this vulnerability under normal conditions. Administrators do not have access to the grub configuration file nor do they have permission to modify it. An attacker would need to first compromise the system and then get the root Linux privileges necessary to perform these actions before they could exploit this vulnerability. The BootHole vulnerability itself does not allow an attacker to compromise PAN-OS software.\n\nPalo Alto Networks is not aware of any malicious exploitation of this vulnerability.\n\nThe Palo Alto Networks Product Security Assurance team evaluated this potential vulnerability and determined that the scenarios required for successful exploitation of the BootHole vulnerability do not exist on PAN-OS software under normal conditions.\n</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "PAN-OS",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "CWE",
+							"lang": "en",
+							"description": "CWE-120 Buffer Overflow",
+							"cweId": "CWE-120"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV4_0": {
+						"version": "4.0",
+						"vectorString": "CVSS:4.0/AV:L/AC:H/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+						"baseScore": 0,
+						"baseSeverity": "NONE",
+						"attackVector": "LOCAL",
+						"attackComplexity": "HIGH",
+						"attackRequirements": "NONE",
+						"privilegesRequired": "HIGH",
+						"userInteraction": "NONE",
+						"vulnConfidentialityImpact": "HIGH",
+						"vulnIntegrityImpact": "HIGH",
+						"vulnAvailabilityImpact": "HIGH",
+						"subConfidentialityImpact": "HIGH",
+						"subIntegrityImpact": "HIGH",
+						"subAvailabilityImpact": "HIGH",
+						"Safety": "NOT_DEFINED",
+						"Automatable": "NOT_DEFINED",
+						"Recovery": "NOT_DEFINED",
+						"valueDensity": "NOT_DEFINED",
+						"vulnerabilityResponseEffort": "NOT_DEFINED",
+						"providerUrgency": "NOT_DEFINED"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "This vulnerability requires an attacker to compromise PAN-OS software before they can successfully exploit it. The risk of exploitation on PAN-OS software is reduced by upgrading your appliances to the latest versions.\n\nThis issue impacts the PAN-OS management interface but you can additionally mitigate the impact of this issue by following best practices for securing the PAN-OS management interface. Please review the Best Practices for Securing Administrative Access on the PAN-OS technical documentation website at https://docs.paloaltonetworks.com/best-practices.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "This vulnerability requires an attacker to compromise PAN-OS software before they can successfully exploit it. The risk of exploitation on PAN-OS software is reduced by upgrading your appliances to the latest versions.\n\nThis issue impacts the PAN-OS management interface but you can additionally mitigate the impact of this issue by following best practices for securing the PAN-OS management interface. Please review the Best Practices for Securing Administrative Access on the PAN-OS technical documentation website at https://docs.paloaltonetworks.com/best-practices."
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks is working on a fix for the BootHole vulnerability that will prevent an attacker with root privileges from being able to exploit it. The workarounds provided can help mitigate the risk of this issue until that fix is released. There are currently no PAN-OS updates available for this issue.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "Palo Alto Networks is working on a fix for the BootHole vulnerability that will prevent an attacker with root privileges from being able to exploit it. The workarounds provided can help mitigate the risk of this issue until that fix is released. There are currently no PAN-OS updates available for this issue."
+					}
+				}
+			],
+			"configurations": [
+				{
+					"lang": "en",
+					"value": "This vulnerability is exploitable only when an attacker already compromised the PAN-OS software and gained root Linux privileges on the system. This is not possible under normal conditions.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "This vulnerability is exploitable only when an attacker already compromised the PAN-OS software and gained root Linux privileges on the system. This is not possible under normal conditions."
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2020-0008"
+				},
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://eclypsium.com/2020/07/29/theres-a-hole-in-the-boot/"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2020-08-12T16:00:00.000Z",
+					"lang": "eng",
+					"value": "Initial publication"
+				}
+			],
+			"source": {
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2020-08-12T16:00:00.000Z",
+			"x_generator": {
+				"engine": "vulnogram 0.1.0-rc1"
+			}
+		}
+	}
+}

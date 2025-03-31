@@ -1,0 +1,156 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2025-0006",
+		"assignerOrgId": "00000000-0000-4000-9000-000000000000",
+		"serial": 1,
+		"state": "PUBLISHED"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "00000000-0000-4000-9000-000000000000"
+			},
+			"title": "Informational Bulletin: Impact of OSS CVEs in PAN-OS",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "The Palo Alto Networks Product Security Assurance team has evaluated the following open source software (OSS) CVEs as they relate to PAN-OS software. While PAN-OS software may include the affected OSS package, PAN-OS does not offer any scenarios required for an attacker to successfully exploit these vulnerabilities and is not impacted.\n",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "T<span>he Palo Alto Networks Product Security Assurance team has evaluated the following open source software (OSS) CVEs as they relate to PAN-OS software. While PAN-OS software may include the affected OSS package, PAN-OS does not offer any scenarios required for an attacker to successfully exploit these vulnerabilities and is not impacted.</span>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "PAN-OS",
+					"defaultStatus": "unaffected",
+					"versions": [
+						{
+							"status": "unaffected",
+							"versionType": "custom",
+							"version": "All"
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"lang": "en",
+							"description": ""
+						}
+					]
+				}
+			],
+			"impacts": [
+				{
+					"descriptions": [
+						{
+							"lang": "en",
+							"value": ""
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV4_0": {
+						"version": "4.0",
+						"vectorString": "CVSS:4.0/AV:P/AC:H/AT:P/PR:H/UI:A/VC:N/VI:N/VA:N/SC:N/SI:N/SA:N",
+						"baseScore": 0,
+						"baseSeverity": "NONE",
+						"attackVector": "PHYSICAL",
+						"attackComplexity": "HIGH",
+						"attackRequirements": "PRESENT",
+						"privilegesRequired": "HIGH",
+						"userInteraction": "ACTIVE",
+						"vulnConfidentialityImpact": "NONE",
+						"vulnIntegrityImpact": "NONE",
+						"vulnAvailabilityImpact": "NONE",
+						"subConfidentialityImpact": "NONE",
+						"subIntegrityImpact": "NONE",
+						"subAvailabilityImpact": "NONE",
+						"exploitMaturity": "NOT_DEFINED",
+						"Safety": "NOT_DEFINED",
+						"Automatable": "NOT_DEFINED",
+						"Recovery": "NOT_DEFINED",
+						"valueDensity": "NOT_DEFINED",
+						"vulnerabilityResponseEffort": "NOT_DEFINED",
+						"providerUrgency": "NOT_DEFINED",
+						"threatScore": 0,
+						"threatSeverity": "NONE"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "No workarounds or mitigations are needed.",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "No workarounds or mitigations are needed."
+						}
+					]
+				}
+			],
+			"exploits": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks is not aware of any malicious exploitation of this issue.",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "Palo Alto Networks is not aware of any malicious exploitation of this issue."
+						}
+					]
+				}
+			],
+			"configurations": [
+				{
+					"lang": "en",
+					"value": "PAN-OS is not vulnerable under any configuration.",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "PAN-OS is not vulnerable under any configuration."
+						}
+					]
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"vendor-advisory"
+					],
+					"url": "https://"
+				}
+			],
+			"source": {
+				"discovery": "UNKNOWN"
+			},
+			"datePublic": "2025-02-12T17:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.1.0-dev"
+			}
+		}
+	}
+}

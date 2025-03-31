@@ -1,0 +1,245 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2016-0025",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2016-10-04T01:00:00.000Z",
+		"dateReserved": "2016-10-04T01:00:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Kernel Vulnerabilities",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "The kernel in use by the Management Plane of PAN-OS is vulnerable to CVE-2015-5364 and CVE-2015-5366.\n (Ref # PAN-52379/87408)\nThe CVSS Score of CVE-2015-5364 is 7.8, High; while the CVSS Score of CVE-2015-5366 is 5.0, Medium. Those could lead to a Denial of Service attack.\nThis issue affects PAN-OS 5.0.19 and earlier; PAN-OS 5.1.12 and earlier; PAN-OS 6.0.14 and earlier; PAN-OS 6.1.14 and earlier; PAN-OS 7.0.10 and earlier; PAN-OS 7.1.4 and earlier",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>The kernel in use by the Management Plane of PAN-OS is vulnerable to CVE-2015-5364 and CVE-2015-5366.\n (Ref # PAN-52379/87408)\nThe CVSS Score of CVE-2015-5364 is 7.8, High; while the CVSS Score of CVE-2015-5366 is 5.0, Medium. Those could lead to a Denial of Service attack.\nThis issue affects PAN-OS 5.0.19 and earlier; PAN-OS 5.1.12 and earlier; PAN-OS 6.0.14 and earlier; PAN-OS 6.1.14 and earlier; PAN-OS 7.0.10 and earlier; PAN-OS 7.1.4 and earlier</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "PAN-OS",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "5.0",
+							"lessThanOrEqual": "5.0.19",
+							"changes": [
+								{
+									"at": "5.0.20",
+									"status": "unaffected"
+								}
+							]
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "5.1",
+							"lessThanOrEqual": "5.1.12",
+							"changes": [
+								{
+									"at": "5.1.13",
+									"status": "unaffected"
+								}
+							]
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "6.0",
+							"lessThanOrEqual": "6.0.14",
+							"changes": [
+								{
+									"at": "6.0.15",
+									"status": "unaffected"
+								}
+							]
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "6.1",
+							"lessThanOrEqual": "6.1.14",
+							"changes": [
+								{
+									"at": "6.1.15",
+									"status": "unaffected"
+								}
+							]
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "7.0",
+							"lessThanOrEqual": "7.0.10",
+							"changes": [
+								{
+									"at": "7.0.11",
+									"status": "unaffected"
+								}
+							]
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "7.1",
+							"lessThanOrEqual": "7.1.4",
+							"changes": [
+								{
+									"at": "7.1.5",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "CWE",
+							"lang": "en",
+							"description": "CWE-399",
+							"cweId": "CWE-399"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"privilegesRequired": "NONE",
+						"userInteraction": "NONE",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "NONE",
+						"integrityImpact": "NONE",
+						"availabilityImpact": "HIGH",
+						"baseScore": 7.5,
+						"baseSeverity": "HIGH"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "N/A",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "N/A"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "PAN-OS 5.0.20 and later; PAN-OS 5.1.13 and later; PAN-OS 6.0.15 and later; PAN-OS 6.1.15 and later; PAN-OS 7.0.11 and later; PAN-OS 7.1.5 and later\n",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "PAN-OS 5.0.20 and later; PAN-OS 5.1.13 and later; PAN-OS 6.0.15 and later; PAN-OS 6.1.15 and later; PAN-OS 7.0.11 and later; PAN-OS 7.1.5 and later\n"
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2016-0025"
+				}
+			],
+			"source": {
+				"advisory": "PAN-SA-2016-0025",
+				"defect": [
+					"PAN-52379",
+					"87408"
+				],
+				"discovery": "UNKNOWN"
+			},
+			"datePublic": "2016-10-04T01:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			},
+			"x_affectedList": [
+				"PAN-OS 7.1.4",
+				"PAN-OS 7.1.3",
+				"PAN-OS 7.1.2",
+				"PAN-OS 7.1.1",
+				"PAN-OS 7.1.0",
+				"PAN-OS 7.1",
+				"PAN-OS 7.0.10",
+				"PAN-OS 7.0.9",
+				"PAN-OS 7.0.8",
+				"PAN-OS 7.0.7",
+				"PAN-OS 7.0.6",
+				"PAN-OS 7.0.5-h2",
+				"PAN-OS 7.0.5-h1",
+				"PAN-OS 7.0.5",
+				"PAN-OS 7.0.4",
+				"PAN-OS 7.0.3",
+				"PAN-OS 7.0.2",
+				"PAN-OS 7.0.1",
+				"PAN-OS 7.0",
+				"PAN-OS 6.1.14",
+				"PAN-OS 6.1.13",
+				"PAN-OS 6.1.12",
+				"PAN-OS 6.1.11",
+				"PAN-OS 6.1.10",
+				"PAN-OS 6.1.9",
+				"PAN-OS 6.1.8",
+				"PAN-OS 6.1.7",
+				"PAN-OS 6.1.6",
+				"PAN-OS 6.1.5",
+				"PAN-OS 6.1.4",
+				"PAN-OS 6.1.3",
+				"PAN-OS 6.1.2",
+				"PAN-OS 6.1.1",
+				"PAN-OS 6.1.0",
+				"PAN-OS 6.1",
+				"PAN-OS 6.0.14",
+				"PAN-OS 6.0.13",
+				"PAN-OS 6.0.12",
+				"PAN-OS 6.0.11",
+				"PAN-OS 6.0.10",
+				"PAN-OS 6.0.9",
+				"PAN-OS 6.0.8",
+				"PAN-OS 6.0.7",
+				"PAN-OS 6.0.6",
+				"PAN-OS 6.0.5-h3",
+				"PAN-OS 6.0.5-h2",
+				"PAN-OS 6.0.5-h1",
+				"PAN-OS 6.0.5",
+				"PAN-OS 6.0.4",
+				"PAN-OS 6.0.3",
+				"PAN-OS 6.0.2",
+				"PAN-OS 6.0.1",
+				"PAN-OS 6.0.0",
+				"PAN-OS 6.0",
+				"PAN-OS 5.1",
+				"PAN-OS 5.0"
+			]
+		}
+	}
+}

@@ -1,0 +1,149 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2020-0011",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2020-12-09T00:00:00",
+		"dateUpdated": "2020-12-09T00:00:00.000000Z",
+		"dateReserved": "2020-12-09T00:00:00"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Informational: Impact of OpenSSL vulnerability CVE-2020-1971",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks Product Security Assurance team has evaluated the vulnerability CVE-2020-1971 that affects the OpenSSL library.\n\nThe vulnerability does not have a security impact on PAN-OS, GlobalProtect App, or Cortex XSOAR. The scenarios required for successful exploitation do not exist on these products.\n",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>Palo Alto Networks Product Security Assurance team has evaluated the vulnerability CVE-2020-1971 that affects the OpenSSL library.\n\nThe vulnerability does not have a security impact on PAN-OS, GlobalProtect App, or Cortex XSOAR. The scenarios required for successful exploitation do not exist on these products.\n</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "PAN-OS",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Cortex XSOAR",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "GlobalProtect App",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "text",
+							"lang": "en",
+							"description": "No Problem"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV4_0": {
+						"version": "4.0",
+						"vectorString": "CVSS:4.0/AV:P/AC:H/AT:P/PR:H/UI:A/VC:N/VI:N/VA:N/SC:N/SI:N/SA:N",
+						"baseScore": 0,
+						"baseSeverity": "NONE",
+						"attackVector": "PHYSICAL",
+						"attackComplexity": "HIGH",
+						"attackRequirements": "PRESENT",
+						"privilegesRequired": "HIGH",
+						"userInteraction": "ACTIVE",
+						"vulnConfidentialityImpact": "NONE",
+						"vulnIntegrityImpact": "NONE",
+						"vulnAvailabilityImpact": "NONE",
+						"subConfidentialityImpact": "NONE",
+						"subIntegrityImpact": "NONE",
+						"subAvailabilityImpact": "NONE",
+						"Safety": "NOT_DEFINED",
+						"Automatable": "NOT_DEFINED",
+						"Recovery": "NOT_DEFINED",
+						"valueDensity": "NOT_DEFINED",
+						"vulnerabilityResponseEffort": "NOT_DEFINED",
+						"providerUrgency": "NOT_DEFINED"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "No product updates are required for these issues.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "No product updates are required for these issues."
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2020-0011"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2020-12-09T17:00:00.000Z",
+					"lang": "eng",
+					"value": "Initial publication"
+				}
+			],
+			"source": {
+				"defect": [
+					"PAN-159783"
+				],
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2020-12-09T17:00:00.000Z",
+			"x_generator": {
+				"engine": "vulnogram 0.1.0-rc1"
+			}
+		}
+	}
+}

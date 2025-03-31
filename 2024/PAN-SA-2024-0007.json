@@ -1,0 +1,155 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2024-0007",
+		"assignerOrgId": "00000000-0000-4000-9000-000000000000",
+		"assignerShortName": "palo_alto",
+		"serial": 1,
+		"state": "PUBLISHED",
+		"datePublished": "2024-08-14T07:00:00.000Z",
+		"dateUpdated": "2024-08-14T00:00:00.000Z",
+		"dateReserved": "2024-08-14T07:00:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "00000000-0000-4000-9000-000000000000",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T08:00:00.000Z"
+			},
+			"title": "Prisma Access Browser: Monthly Vulnerability Updates",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "Prisma Access Browser (supersedes Talon Browser) has incorporated the latest upstream Chromium security fixes listed here:\n- https://chromereleases.googleblog.com/2024/07/stable-channel-update-for-desktop.html\n- https://chromereleases.googleblog.com/2024/07/stable-channel-update-for-desktop_23.html\n- https://chromereleases.googleblog.com/2024/07/stable-channel-update-for-desktop_30.html\n- https://chromereleases.googleblog.com/2024/08/stable-channel-update-for-desktop.html",
+					"supportingMedia": [
+						{
+							"base64": true,
+							"type": "text/html",
+							"value": "<pre>Prisma Access Browser (supersedes Talon Browser) has incorporated the latest upstream Chromium security fixes listed here:\n- https://chromereleases.googleblog.com/2024/07/stable-channel-update-for-desktop.html\n- https://chromereleases.googleblog.com/2024/07/stable-channel-update-for-desktop_23.html\n- https://chromereleases.googleblog.com/2024/07/stable-channel-update-for-desktop_30.html\n- https://chromereleases.googleblog.com/2024/08/stable-channel-update-for-desktop.html</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Prisma Access Browser",
+					"defaultStatus": "unaffected",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "0",
+							"lessThan": "126.183.2844.1",
+							"changes": [
+								{
+									"at": "127.100.2858.4",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"lang": "en",
+							"description": ""
+						}
+					]
+				}
+			],
+			"impacts": [
+				{
+					"descriptions": [
+						{
+							"lang": "en",
+							"value": ""
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV4_0": {
+						"version": "4.0",
+						"vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/AU:N/R:A/V:D/RE:L/U:Amber",
+						"baseScore": 8.6,
+						"baseSeverity": "HIGH",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"attackRequirements": "NONE",
+						"privilegesRequired": "NONE",
+						"userInteraction": "ACTIVE",
+						"vulnConfidentialityImpact": "HIGH",
+						"vulnIntegrityImpact": "HIGH",
+						"vulnAvailabilityImpact": "HIGH",
+						"subConfidentialityImpact": "NONE",
+						"subIntegrityImpact": "NONE",
+						"subAvailabilityImpact": "NONE",
+						"Safety": "NOT_DEFINED",
+						"Automatable": "NO",
+						"Recovery": "AUTOMATIC",
+						"valueDensity": "DIFFUSE",
+						"vulnerabilityResponseEffort": "LOW",
+						"providerUrgency": "AMBER"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "Prisma Access Browser 127.100.2858.4 (supersedes Talon Browser) and all later Prisma Access Browser versions contain the fix for all the listed CVEs.",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "Prisma Access Browser 127.100.2858.4 (supersedes Talon Browser) and all later Prisma Access Browser versions contain the fix for all the listed CVEs."
+						}
+					]
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2024-0007"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2024-08-14T16:00:00.000Z",
+					"lang": "eng",
+					"value": "Initial publication"
+				},
+				{
+					"time": "2024-08-14T20:30:00.000Z",
+					"lang": "eng",
+					"value": "Clarified affected and unaffected versions"
+				}
+			],
+			"source": {
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2024-08-14T16:00:00.000Z",
+			"x_generator": {
+				"engine": "vulnogram 0.1.0-rc1"
+			},
+			"x_affectedList": [
+				"Prisma Access Browser"
+			]
+		}
+	}
+}

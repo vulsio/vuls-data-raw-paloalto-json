@@ -1,0 +1,127 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2021-0001",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2021-01-13T00:00:00",
+		"dateUpdated": "2021-01-13T00:00:00.000000Z",
+		"dateReserved": "2021-01-13T00:00:00"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Informational: Cortex XSOAR: Impact of Golang XML parsing vulnerabilities",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "The Palo Alto Networks Product Security Assurance team evaluated the vulnerabilities (CVE-2020-29509, CVE-2020-29510, and CVE-2020-29511) that impact the standard Golang XML parsing library.\n\nAll versions of Cortex XSOAR use a version of Golang that contains these vulnerabilities but there are no scenarios for successful exploitation of them in Cortex XSOAR.\n\nAs a result, there is no known security impact for these issues in Cortex XSOAR. However, out of an abundance of caution, we removed the impacted Golang code entirely from Cortex XSOAR 5.5.0, Cortex XSOAR 6.0.2, and all later versions of Cortex XSOAR.\n",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>The Palo Alto Networks Product Security Assurance team evaluated the vulnerabilities (CVE-2020-29509, CVE-2020-29510, and CVE-2020-29511) that impact the standard Golang XML parsing library.\n\nAll versions of Cortex XSOAR use a version of Golang that contains these vulnerabilities but there are no scenarios for successful exploitation of them in Cortex XSOAR.\n\nAs a result, there is no known security impact for these issues in Cortex XSOAR. However, out of an abundance of caution, we removed the impacted Golang code entirely from Cortex XSOAR 5.5.0, Cortex XSOAR 6.0.2, and all later versions of Cortex XSOAR.\n</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Cortex XSOAR",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "5.5.*"
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "6.0",
+							"lessThan": "6.0.2",
+							"changes": [
+								{
+									"at": "6.0.2",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:P/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:N",
+						"attackVector": "PHYSICAL",
+						"attackComplexity": "HIGH",
+						"privilegesRequired": "HIGH",
+						"userInteraction": "REQUIRED",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "NONE",
+						"integrityImpact": "NONE",
+						"availabilityImpact": "NONE",
+						"baseScore": 0,
+						"baseSeverity": "NONE"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "Cortex XSOAR 5.5.0, Cortex XSOAR 6.0.2, and all later versions of Cortex XSOAR do not include the impacted Golang code.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "Cortex XSOAR 5.5.0, Cortex XSOAR 6.0.2, and all later versions of Cortex XSOAR do not include the impacted Golang code."
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2021-0001"
+				},
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://mattermost.com/blog/coordinated-disclosure-go-xml-vulnerabilities/"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2021-01-13T17:00:00.000Z",
+					"lang": "eng",
+					"value": "Initial publication"
+				}
+			],
+			"source": {
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2021-01-13T17:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			},
+			"x_affectedList": [
+				"Cortex XSOAR 6.0"
+			]
+		}
+	}
+}

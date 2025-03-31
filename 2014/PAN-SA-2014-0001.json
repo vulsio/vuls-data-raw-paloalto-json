@@ -1,0 +1,160 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2014-0001",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2014-01-29T23:00:00.000Z",
+		"dateReserved": "2014-01-29T23:00:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Management API Key Bypass",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "An XML API key can be bypassed if a session has been authorized. This can be used in a CSRF or XSS attack.  (Ref # 58976)\nThis issue requires an authenticated administrator session to be successful.\nThis issue affects PAN-OS version 4.1.15 and earlier; 5.0.9 and earlier; 5.1.4 and earlier.",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>An XML API key can be bypassed if a session has been authorized. This can be used in a CSRF or XSS attack.  (Ref # 58976)\nThis issue requires an authenticated administrator session to be successful.\nThis issue affects PAN-OS version 4.1.15 and earlier; 5.0.9 and earlier; 5.1.4 and earlier.</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "PAN-OS",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "4.1",
+							"lessThanOrEqual": "4.1.15",
+							"changes": [
+								{
+									"at": "4.1.16",
+									"status": "unaffected"
+								}
+							]
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "5.0",
+							"lessThanOrEqual": "5.0.9",
+							"changes": [
+								{
+									"at": "5.0.10",
+									"status": "unaffected"
+								}
+							]
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "5.1",
+							"lessThanOrEqual": "5.1.4",
+							"changes": [
+								{
+									"at": "5.1.5",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "text",
+							"lang": "en",
+							"description": "Management API Key Bypass"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
+						"attackVector": "NETWORK",
+						"attackComplexity": "HIGH",
+						"privilegesRequired": "NONE",
+						"userInteraction": "REQUIRED",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "NONE",
+						"integrityImpact": "HIGH",
+						"availabilityImpact": "NONE",
+						"baseScore": 5.3,
+						"baseSeverity": "MEDIUM"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "This issue affects the management interface of the device. Security appliance management best practices dictate that the management interface be isolated and strictly limited only to security administration personnel.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "This issue affects the management interface of the device. Security appliance management best practices dictate that the management interface be isolated and strictly limited only to security administration personnel."
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "PAN-OS 4.1.16; 5.0.10 and 5.1.5 address this issue.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "PAN-OS 4.1.16; 5.0.10 and 5.1.5 address this issue."
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2014-0001"
+				}
+			],
+			"credits": [
+				{
+					"lang": "en",
+					"value": "Anton Ziukin, Check Point Vulnerability Research Team"
+				}
+			],
+			"source": {
+				"advisory": "PAN-SA-2014-0001",
+				"defect": [
+					"58976"
+				],
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2014-01-29T23:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			},
+			"x_affectedList": [
+				"PAN-OS 5.1",
+				"PAN-OS 5.0",
+				"PAN-OS 4.1"
+			]
+		}
+	}
+}

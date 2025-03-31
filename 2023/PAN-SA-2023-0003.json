@@ -1,0 +1,395 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2023-0003",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2023-06-16T17:45:00.000Z",
+		"dateUpdated": "2023-06-20T00:00:00.000000Z",
+		"dateReserved": "2023-06-16T17:45:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Informational Bulletin: Impact of MOVEit Vulnerabilities (CVE-2023-34362, CVE-2023-35036, CVE-2023-35708) ",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "The Palo Alto Networks Product Security Assurance team has evaluated the recently disclosed critical Structured Query Language injection (SQLi) vulnerabilities (CVE-2023-34362, CVE-2023-35036, CVE-2023-35708) in the MOVEit Transfer product. Palo Alto Networks does not use MOVEit Transfer and is not impacted by these vulnerabilities.\n\nProtecting our customers is our highest priority. Palo Alto Networks and its Unit 42 threat research team are continuing to closely monitor all developments. You can find regular updates, as well as Palo Alto Networks product protections and interim guidance here: https://unit42.paloaltonetworks.com/threat-brief-moveit-cve-2023-34362/",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>The Palo Alto Networks Product Security Assurance team has evaluated the recently disclosed critical Structured Query Language injection (SQLi) vulnerabilities (CVE-2023-34362, CVE-2023-35036, CVE-2023-35708) in the MOVEit Transfer product. Palo Alto Networks does not use MOVEit Transfer and is not impacted by these vulnerabilities.\n\nProtecting our customers is our highest priority. Palo Alto Networks and its Unit 42 threat research team are continuing to closely monitor all developments. You can find regular updates, as well as Palo Alto Networks product protections and interim guidance here: https://unit42.paloaltonetworks.com/threat-brief-moveit-cve-2023-34362/</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "PAN-OS",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Cortex XDR Agent",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "GlobalProtect App",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Cortex XSOAR",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "WildFire Appliance (WF-500)",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Expanse",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Okyo Garde",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Palo Alto Networks App for Splunk",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Prisma Cloud Compute",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Expedition Migration Tool",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "IoT Security",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "User-ID Agent",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Exact Data Matching CLI",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Bridgecrew",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Cortex Xpanse",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Enterprise Data Loss Prevention",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Prisma SD-WAN (CloudGenix)",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Prisma SD-WAN ION",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "SaaS Security",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Cortex Data Lake",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "AutoFocus",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "WildFire Cloud",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Prisma Cloud",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Cloud NGFW",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Prisma Access",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Cortex XDR",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:P/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:N",
+						"attackVector": "PHYSICAL",
+						"attackComplexity": "HIGH",
+						"privilegesRequired": "HIGH",
+						"userInteraction": "REQUIRED",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "NONE",
+						"integrityImpact": "NONE",
+						"availabilityImpact": "NONE",
+						"baseScore": 0,
+						"baseSeverity": "NONE"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks product protections for MOVEit Transfer vulnerabilities are captured in Unit 42's Threat Brief: https://unit42.paloaltonetworks.com/threat-brief-moveit-cve-2023-34362/. These mitigations reduce the risk of exploitation from known exploits.\n",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "Palo Alto Networks product protections for MOVEit Transfer vulnerabilities are captured in Unit 42's Threat Brief: https://unit42.paloaltonetworks.com/threat-brief-moveit-cve-2023-34362/. These mitigations reduce the risk of exploitation from known exploits.\n"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "No software updates are required at this time.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "No software updates are required at this time."
+					}
+				}
+			],
+			"exploits": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks is not aware of any malicious exploitation of this issue on any of our products.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "Palo Alto Networks is not aware of any malicious exploitation of this issue on any of our products."
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2023-0003"
+				},
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://community.progress.com/s/article/MOVEit-Transfer-Critical-Vulnerability-CVE-2023-35036-June-9-2023"
+				},
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://community.progress.com/s/article/MOVEit-Transfer-Critical-Vulnerability-31May2023"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2023-06-16T17:45:00.000Z",
+					"lang": "eng",
+					"value": "Initial Publication"
+				},
+				{
+					"time": "2023-06-20T22:00:00.000Z",
+					"lang": "eng",
+					"value": "Added Unit 42's threat brief in Workarounds and Mitigations "
+				}
+			],
+			"source": {
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2023-06-16T17:45:00.000Z",
+			"x_generator": {
+				"engine": "vulnogram 0.1.0-rc1"
+			}
+		}
+	}
+}

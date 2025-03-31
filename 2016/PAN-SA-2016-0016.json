@@ -1,0 +1,218 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2016-0016",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2016-07-15T00:00:00.000Z",
+		"dateReserved": "2016-07-15T00:00:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Web Interface Privilege Escalation",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks Panorama administrators have the ability to assign predefined permissions to users created on PAN-OS. A read-only user with CLI access could elevate web interface privileges. (Ref. 88191)\nA user could elevate privileges by impersonating another user with higher permissions.\nThis issue affects PAN-OS 5.0.18 and earlier; PAN-OS 5.1.11 and earlier; PAN-OS 6.0.13 and earlier; PAN-OS 6.1.10 and earlier; PAN-OS 7.0.4 and earlier",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>Palo Alto Networks Panorama administrators have the ability to assign predefined permissions to users created on PAN-OS. A read-only user with CLI access could elevate web interface privileges. (Ref. 88191)\nA user could elevate privileges by impersonating another user with higher permissions.\nThis issue affects PAN-OS 5.0.18 and earlier; PAN-OS 5.1.11 and earlier; PAN-OS 6.0.13 and earlier; PAN-OS 6.1.10 and earlier; PAN-OS 7.0.4 and earlier</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "PAN-OS",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "5.0",
+							"lessThanOrEqual": "5.0.18",
+							"changes": [
+								{
+									"at": "5.0.19",
+									"status": "unaffected"
+								}
+							]
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "5.1",
+							"lessThanOrEqual": "5.1.11",
+							"changes": [
+								{
+									"at": "5.1.12",
+									"status": "unaffected"
+								}
+							]
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "6.0",
+							"lessThanOrEqual": "6.0.13",
+							"changes": [
+								{
+									"at": "6.0.14",
+									"status": "unaffected"
+								}
+							]
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "6.1",
+							"lessThanOrEqual": "6.1.10",
+							"changes": [
+								{
+									"at": "6.1.11",
+									"status": "unaffected"
+								}
+							]
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "7.0",
+							"lessThanOrEqual": "7.0.4",
+							"changes": [
+								{
+									"at": "7.0.5",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "text",
+							"lang": "en",
+							"description": "Web Interface Privilege Escalation"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+						"attackVector": "LOCAL",
+						"attackComplexity": "LOW",
+						"privilegesRequired": "LOW",
+						"userInteraction": "NONE",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "HIGH",
+						"integrityImpact": "HIGH",
+						"availabilityImpact": "HIGH",
+						"baseScore": 7.8,
+						"baseSeverity": "HIGH"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "Customers running versions of Panorama affected by this issue could create a custom admin role that does not allow CLI access and to avoid any privilege escalation. Firewalls running PAN-OS are not affected by this issue.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "Customers running versions of Panorama affected by this issue could create a custom admin role that does not allow CLI access and to avoid any privilege escalation. Firewalls running PAN-OS are not affected by this issue."
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "PAN-OS 5.0.19 and later; PAN-OS 5.1.12 and later; PAN-OS 6.0.14 and later; PAN-OS 6.1.11 and later; PAN-OS 7.0.5 and later",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "PAN-OS 5.0.19 and later; PAN-OS 5.1.12 and later; PAN-OS 6.0.14 and later; PAN-OS 6.1.11 and later; PAN-OS 7.0.5 and later"
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2016-0016"
+				}
+			],
+			"credits": [
+				{
+					"lang": "en",
+					"value": "John Perry, the Boeing Company"
+				}
+			],
+			"source": {
+				"advisory": "PAN-SA-2016-0016",
+				"defect": [
+					"88191"
+				],
+				"discovery": "UNKNOWN"
+			},
+			"datePublic": "2016-07-15T00:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			},
+			"x_affectedList": [
+				"PAN-OS 7.0.4",
+				"PAN-OS 7.0.3",
+				"PAN-OS 7.0.2",
+				"PAN-OS 7.0.1",
+				"PAN-OS 7.0",
+				"PAN-OS 6.1.10",
+				"PAN-OS 6.1.9",
+				"PAN-OS 6.1.8",
+				"PAN-OS 6.1.7",
+				"PAN-OS 6.1.6",
+				"PAN-OS 6.1.5",
+				"PAN-OS 6.1.4",
+				"PAN-OS 6.1.3",
+				"PAN-OS 6.1.2",
+				"PAN-OS 6.1.1",
+				"PAN-OS 6.1.0",
+				"PAN-OS 6.1",
+				"PAN-OS 6.0.13",
+				"PAN-OS 6.0.12",
+				"PAN-OS 6.0.11",
+				"PAN-OS 6.0.10",
+				"PAN-OS 6.0.9",
+				"PAN-OS 6.0.8",
+				"PAN-OS 6.0.7",
+				"PAN-OS 6.0.6",
+				"PAN-OS 6.0.5-h3",
+				"PAN-OS 6.0.5-h2",
+				"PAN-OS 6.0.5-h1",
+				"PAN-OS 6.0.5",
+				"PAN-OS 6.0.4",
+				"PAN-OS 6.0.3",
+				"PAN-OS 6.0.2",
+				"PAN-OS 6.0.1",
+				"PAN-OS 6.0.0",
+				"PAN-OS 6.0",
+				"PAN-OS 5.1",
+				"PAN-OS 5.0"
+			]
+		}
+	}
+}

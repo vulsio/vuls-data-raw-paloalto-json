@@ -1,0 +1,183 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2025-0004",
+		"assignerOrgId": "00000000-0000-4000-9000-000000000000",
+		"serial": 1,
+		"state": "PUBLISHED"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "00000000-0000-4000-9000-000000000000"
+			},
+			"title": "Chromium: Monthly Vulnerability Update (February 2025)",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks incorporated the following Chromium security fixes into our products:\n\n * https://chromereleases.googleblog.com/2025/02/stable-channel-update-for-desktop.html\n * https://chromereleases.googleblog.com/2025/01/stable-channel-update-for-desktop_28.html\n * https://chromereleases.googleblog.com/2025/01/stable-channel-update-for-desktop_22.html\n * https://chromereleases.googleblog.com/2025/01/stable-channel-update-for-desktop_14.html\n * https://chromereleases.googleblog.com/2025/01/stable-channel-update-for-desktop.html",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "<div>Palo Alto Networks incorporated the following Chromium security fixes into our products:<br><ul><li><a target=\"_blank\" rel=\"nofollow\" href=\"https://chromereleases.googleblog.com/2025/02/stable-channel-update-for-desktop.html\">https://chromereleases.googleblog.com/2025/02/stable-channel-update-for-desktop.html</a></li><li><a target=\"_blank\" rel=\"nofollow\" href=\"https://chromereleases.googleblog.com/2025/01/stable-channel-update-for-desktop_28.html\">https://chromereleases.googleblog.com/2025/01/stable-channel-update-for-desktop_28.html</a></li><li><a target=\"_blank\" rel=\"nofollow\" href=\"https://chromereleases.googleblog.com/2025/01/stable-channel-update-for-desktop_22.html\">https://chromereleases.googleblog.com/2025/01/stable-channel-update-for-desktop_22.html</a></li><li><a target=\"_blank\" rel=\"nofollow\" href=\"https://chromereleases.googleblog.com/2025/01/stable-channel-update-for-desktop_14.html\">https://chromereleases.googleblog.com/2025/01/stable-channel-update-for-desktop_14.html</a></li><li><a target=\"_blank\" rel=\"nofollow\" href=\"https://chromereleases.googleblog.com/2025/01/stable-channel-update-for-desktop.html\">https://chromereleases.googleblog.com/2025/01/stable-channel-update-for-desktop.html</a></li></ul></div>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Prisma Access Browser",
+					"defaultStatus": "unaffected",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "0",
+							"lessThan": "132.111.3017.2",
+							"changes": [
+								{
+									"at": "133.8.10.54",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"lang": "en",
+							"description": ""
+						}
+					]
+				}
+			],
+			"impacts": [
+				{
+					"descriptions": [
+						{
+							"lang": "en",
+							"value": ""
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV4_0": {
+						"version": "4.0",
+						"vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:U/AU:N/R:U/V:D/RE:L/U:Amber",
+						"baseScore": 8.6,
+						"baseSeverity": "HIGH",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"attackRequirements": "NONE",
+						"privilegesRequired": "NONE",
+						"userInteraction": "ACTIVE",
+						"vulnConfidentialityImpact": "HIGH",
+						"vulnIntegrityImpact": "HIGH",
+						"vulnAvailabilityImpact": "HIGH",
+						"subConfidentialityImpact": "NONE",
+						"subIntegrityImpact": "NONE",
+						"subAvailabilityImpact": "NONE",
+						"exploitMaturity": "UNREPORTED",
+						"Safety": "NOT_DEFINED",
+						"Automatable": "NO",
+						"Recovery": "USER",
+						"valueDensity": "DIFFUSE",
+						"vulnerabilityResponseEffort": "LOW",
+						"providerUrgency": "AMBER",
+						"threatScore": 6.1,
+						"threatSeverity": "MEDIUM"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "No workaround or mitigation is available.",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "No workaround or mitigation is available."
+						}
+					]
+				}
+			],
+			"solutions": [
+				{
+					"lang": "eng",
+					"value": "CVE             PRISMA ACCESS BROWSER\nCVE-2025-0291   132.111.3017.2\nCVE-2025-0434   132.111.3017.2\nCVE-2025-0435   132.111.3017.2\nCVE-2025-0436   132.111.3017.2\nCVE-2025-0437   132.111.3017.2\nCVE-2025-0438   132.111.3017.2\nCVE-2025-0439   132.111.3017.2\nCVE-2025-0440   132.111.3017.2\nCVE-2025-0441   132.111.3017.2\nCVE-2025-0442   132.111.3017.2\nCVE-2025-0443   132.111.3017.2\nCVE-2025-0446   132.111.3017.2\nCVE-2025-0447   132.111.3017.2\nCVE-2025-0448   132.111.3017.2\nCVE-2025-0444   133.8.10.54\nCVE-2025-0445   133.8.10.54\nCVE-2025-0451   133.8.10.54\nCVE-2025-0611   133.8.10.54\nCVE-2025-0612   133.8.10.54\nCVE-2025-0762   133.8.10.54",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "<table class=\"tbl\"><thead><tr><th>CVE</th><th>Prisma Access Browser<br></th></tr></thead><tbody><tr><td>CVE-2025-0291<br></td><td>132.111.3017.2</td></tr><tr><td>CVE-2025-0434<br></td><td>132.111.3017.2</td></tr><tr><td>CVE-2025-0435<br></td><td>132.111.3017.2</td></tr><tr><td>CVE-2025-0436<br></td><td>132.111.3017.2</td></tr><tr><td>CVE-2025-0437<br></td><td>132.111.3017.2</td></tr><tr><td>CVE-2025-0438<br></td><td>132.111.3017.2</td></tr><tr><td>CVE-2025-0439<br></td><td>132.111.3017.2</td></tr><tr><td>CVE-2025-0440<br></td><td>132.111.3017.2</td></tr><tr><td>CVE-2025-0441<br></td><td>132.111.3017.2</td></tr><tr><td>CVE-2025-0442<br></td><td>132.111.3017.2</td></tr><tr><td>CVE-2025-0443<br></td><td>132.111.3017.2</td></tr><tr><td>CVE-2025-0446<br></td><td>132.111.3017.2</td></tr><tr><td>CVE-2025-0447<br></td><td>132.111.3017.2</td></tr><tr><td>CVE-2025-0448<br></td><td>132.111.3017.2</td></tr><tr><td>CVE-2025-0444<br></td><td>133.8.10.54</td></tr><tr><td>CVE-2025-0445<br></td><td>133.8.10.54</td></tr><tr><td>CVE-2025-0451<br></td><td>133.8.10.54</td></tr><tr><td>CVE-2025-0611<br></td><td>133.8.10.54</td></tr><tr><td>CVE-2025-0612<br></td><td>133.8.10.54</td></tr><tr><td>CVE-2025-0762<br></td><td>133.8.10.54</td></tr></tbody></table>"
+						}
+					]
+				}
+			],
+			"exploits": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks is not aware of any malicious exploitation of this issue.",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "Palo Alto Networks is not aware of any malicious exploitation of this issue."
+						}
+					]
+				}
+			],
+			"configurations": [
+				{
+					"lang": "en",
+					"value": "No special configuration is required to be affected by this issue.",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "No special configuration is required to be affected by this issue."
+						}
+					]
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"vendor-advisory"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2025-0004"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2025-02-12T17:00:00.000Z",
+					"lang": "en",
+					"value": "Initial publication"
+				}
+			],
+			"source": {
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2025-02-12T17:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.1.0-dev"
+			}
+		}
+	}
+}

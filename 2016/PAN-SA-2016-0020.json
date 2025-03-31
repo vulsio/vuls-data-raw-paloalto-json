@@ -1,0 +1,212 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2016-0020",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2016-08-15T18:30:00.000Z",
+		"dateReserved": "2016-08-15T18:30:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "OpenSSL Vulnerabilities",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "The OpenSSL library has been found to contain several vulnerabilities CVE-2014-8176, CVE-2015-1788, CVE-2015-1789, CVE-2015-1790, CVE-2015-1791, CVE-2015-1792, CVE-2015-1794, CVE-2015-3195, CVE-2015-4000, CVE-2016-2105, CVE-2016-2106, CVE-2016-2107, CVE-2016-2108, CVE-2016-2109, CVE-2016-2176, CVE-2016-2842. Palo Alto Networks software makes use of the vulnerable library. (Ref # 95622).\nThe OpenSSL library in use by PAN-OS is patched on a regular basis. Severities of the CVEs listed under the summary section range from low to high but, have not been shown to be exploitable at the time of this advisory.\nThis issue affects PAN-OS 5.0.X; PAN-OS-5.1.X; PAN-OS 6.0.13 and earlier; PAN-OS 6.1.12 and earlier; PAN-OS 7.0.8 and earlier; PAN-OS 7.1.3 and earlier",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>The OpenSSL library has been found to contain several vulnerabilities CVE-2014-8176, CVE-2015-1788, CVE-2015-1789, CVE-2015-1790, CVE-2015-1791, CVE-2015-1792, CVE-2015-1794, CVE-2015-3195, CVE-2015-4000, CVE-2016-2105, CVE-2016-2106, CVE-2016-2107, CVE-2016-2108, CVE-2016-2109, CVE-2016-2176, CVE-2016-2842. Palo Alto Networks software makes use of the vulnerable library. (Ref # 95622).\nThe OpenSSL library in use by PAN-OS is patched on a regular basis. Severities of the CVEs listed under the summary section range from low to high but, have not been shown to be exploitable at the time of this advisory.\nThis issue affects PAN-OS 5.0.X; PAN-OS-5.1.X; PAN-OS 6.0.13 and earlier; PAN-OS 6.1.12 and earlier; PAN-OS 7.0.8 and earlier; PAN-OS 7.1.3 and earlier</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "PAN-OS",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "6.0",
+							"lessThanOrEqual": "6.0.13",
+							"changes": [
+								{
+									"at": "6.0.14",
+									"status": "unaffected"
+								}
+							]
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "6.1",
+							"lessThanOrEqual": "6.1.12",
+							"changes": [
+								{
+									"at": "6.1.13",
+									"status": "unaffected"
+								}
+							]
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "7.0",
+							"lessThanOrEqual": "7.0.8",
+							"changes": [
+								{
+									"at": "7.0.9",
+									"status": "unaffected"
+								}
+							]
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "7.1",
+							"lessThanOrEqual": "7.1.3",
+							"changes": [
+								{
+									"at": "7.1.4",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "CWE",
+							"lang": "en",
+							"description": "CWE-119 Improper Restriction of Operations within the Bounds of a Memory Buffer",
+							"cweId": "CWE-119"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+						"attackVector": "NETWORK",
+						"attackComplexity": "HIGH",
+						"privilegesRequired": "NONE",
+						"userInteraction": "NONE",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "HIGH",
+						"integrityImpact": "HIGH",
+						"availabilityImpact": "HIGH",
+						"baseScore": 8.1,
+						"baseSeverity": "HIGH"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "N/A",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "N/A"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "PAN-OS 6.0.14 and later; PAN-OS 6.1.13 and later; PAN-OS 7.0.9 and later; PAN-OS 7.1.4 and later",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "PAN-OS 6.0.14 and later; PAN-OS 6.1.13 and later; PAN-OS 7.0.9 and later; PAN-OS 7.1.4 and later"
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2016-0020"
+				}
+			],
+			"source": {
+				"advisory": "PAN-SA-2016-0020",
+				"defect": [
+					"95622"
+				],
+				"discovery": "UNKNOWN"
+			},
+			"datePublic": "2016-08-15T18:30:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			},
+			"x_affectedList": [
+				"PAN-OS 7.1.3",
+				"PAN-OS 7.1.2",
+				"PAN-OS 7.1.1",
+				"PAN-OS 7.1.0",
+				"PAN-OS 7.1",
+				"PAN-OS 7.0.8",
+				"PAN-OS 7.0.7",
+				"PAN-OS 7.0.6",
+				"PAN-OS 7.0.5-h2",
+				"PAN-OS 7.0.5-h1",
+				"PAN-OS 7.0.5",
+				"PAN-OS 7.0.4",
+				"PAN-OS 7.0.3",
+				"PAN-OS 7.0.2",
+				"PAN-OS 7.0.1",
+				"PAN-OS 7.0",
+				"PAN-OS 6.1.12",
+				"PAN-OS 6.1.11",
+				"PAN-OS 6.1.10",
+				"PAN-OS 6.1.9",
+				"PAN-OS 6.1.8",
+				"PAN-OS 6.1.7",
+				"PAN-OS 6.1.6",
+				"PAN-OS 6.1.5",
+				"PAN-OS 6.1.4",
+				"PAN-OS 6.1.3",
+				"PAN-OS 6.1.2",
+				"PAN-OS 6.1.1",
+				"PAN-OS 6.1.0",
+				"PAN-OS 6.1",
+				"PAN-OS 6.0.13",
+				"PAN-OS 6.0.12",
+				"PAN-OS 6.0.11",
+				"PAN-OS 6.0.10",
+				"PAN-OS 6.0.9",
+				"PAN-OS 6.0.8",
+				"PAN-OS 6.0.7",
+				"PAN-OS 6.0.6",
+				"PAN-OS 6.0.5-h3",
+				"PAN-OS 6.0.5-h2",
+				"PAN-OS 6.0.5-h1",
+				"PAN-OS 6.0.5",
+				"PAN-OS 6.0.4",
+				"PAN-OS 6.0.3",
+				"PAN-OS 6.0.2",
+				"PAN-OS 6.0.1",
+				"PAN-OS 6.0.0",
+				"PAN-OS 6.0"
+			]
+		}
+	}
+}

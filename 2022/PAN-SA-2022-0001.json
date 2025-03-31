@@ -1,0 +1,176 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2022-0001",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2022-04-14T00:00:00",
+		"dateUpdated": "2023-02-08T00:00:00.000000Z",
+		"dateReserved": "2022-04-14T00:00:00"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Cortex XDR Agent: Supervisor Password Hash Disclosure Vulnerability When Generating Support Files",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "An information exposure vulnerability exists in the Palo Alto Networks Cortex XDR agent that enables a local user to learn the cryptographic hash of the supervisor password when generating support files on a deployed agent.\n\nAn attacker must crack the supervisor password hash to make unauthorized changes to the local Cortex XDR agent. This issue has no security impact if the attacker cannot crack the supervisor password hash.\n\nThis issue is fixed in Cortex XDR agent 7.4.1 and all later agent versions. The impact of this issue is significantly mitigated with the use of a secure supervisor password.",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>An information exposure vulnerability exists in the Palo Alto Networks Cortex XDR agent that enables a local user to learn the cryptographic hash of the supervisor password when generating support files on a deployed agent.\n\nAn attacker must crack the supervisor password hash to make unauthorized changes to the local Cortex XDR agent. This issue has no security impact if the attacker cannot crack the supervisor password hash.\n\nThis issue is fixed in Cortex XDR agent 7.4.1 and all later agent versions. The impact of this issue is significantly mitigated with the use of a secure supervisor password.</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Cortex XDR Agent",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "7.8 All"
+						},
+						{
+							"status": "affected",
+							"version": "5.0 All"
+						},
+						{
+							"status": "unaffected",
+							"version": "7.5 CE All"
+						},
+						{
+							"status": "unaffected",
+							"version": "7.9 All"
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "7.4",
+							"lessThan": "7.4.1",
+							"changes": [
+								{
+									"at": "7.4.1",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "CWE",
+							"lang": "en",
+							"description": "CWE-532 Information Exposure Through Log Files",
+							"cweId": "CWE-532"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+						"attackVector": "LOCAL",
+						"attackComplexity": "LOW",
+						"privilegesRequired": "LOW",
+						"userInteraction": "NONE",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "LOW",
+						"integrityImpact": "NONE",
+						"availabilityImpact": "NONE",
+						"baseScore": 3.3,
+						"baseSeverity": "LOW"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "You should ensure that the Cortex XDR agent supervisor password is as complex as possible to make it infeasible for an attacker to crack and to mitigate the impact of this issue. Cortex XDR Server can enforce minimum password complexity requirements to ensure sufficiently secure passwords are used.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "You should ensure that the Cortex XDR agent supervisor password is as complex as possible to make it infeasible for an attacker to crack and to mitigate the impact of this issue. Cortex XDR Server can enforce minimum password complexity requirements to ensure sufficiently secure passwords are used."
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "This issue is fixed in Cortex XDR agent 7.4.1 and all later agent versions.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "This issue is fixed in Cortex XDR agent 7.4.1 and all later agent versions."
+					}
+				}
+			],
+			"exploits": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks is not aware of any malicious exploitation of this issue. However, details of this issue are publicly available.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "Palo Alto Networks is not aware of any malicious exploitation of this issue. However, details of this issue are publicly available."
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2022-0001"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2023-02-08T17:00:00.000Z",
+					"lang": "eng",
+					"value": "Clarified Cortex XDR agent fixed version"
+				},
+				{
+					"time": "2022-04-14T00:30:00.000Z",
+					"lang": "eng",
+					"value": "Initial publication"
+				}
+			],
+			"credits": [
+				{
+					"lang": "en",
+					"value": "This issue was found by mr.d0x, an external security researcher."
+				}
+			],
+			"source": {
+				"defect": [
+					"CPATR-14158"
+				],
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2022-04-14T00:30:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			},
+			"x_affectedList": [
+				"Cortex XDR Agent 7.4",
+				"Cortex XDR Agent 5.0",
+				"Cortex XDR Agent"
+			]
+		}
+	}
+}

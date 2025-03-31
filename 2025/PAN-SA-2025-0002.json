@@ -1,0 +1,183 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2025-0002",
+		"assignerOrgId": "00000000-0000-4000-9000-000000000000",
+		"serial": 1,
+		"state": "PUBLISHED"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "00000000-0000-4000-9000-000000000000"
+			},
+			"title": "Chromium: Monthly Vulnerability Updates",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks incorporated the following Chromium security fixes into our products:\n\n * https://chromereleases.googleblog.com/2024/12/stable-channel-update-for-desktop_10.html\n * https://chromereleases.googleblog.com/2024/12/stable-channel-update-for-desktop_18.html",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "<div><span>Palo Alto Networks incorporated the following Chromium security fixes into our products:</span><br><ul><li><a target=\"_blank\" rel=\"nofollow\" href=\"https://chromereleases.googleblog.com/2024/12/stable-channel-update-for-desktop_10.html\">https://chromereleases.googleblog.com/2024/12/stable-channel-update-for-desktop_10.html</a></li><li><div><div><a target=\"_blank\" rel=\"nofollow\" href=\"https://chromereleases.googleblog.com/2024/12/stable-channel-update-for-desktop_18.html\">https://chromereleases.googleblog.com/2024/12/stable-channel-update-for-desktop_18.html</a></div></div></li></ul></div>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Prisma Access Browser",
+					"defaultStatus": "unaffected",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "0",
+							"lessThan": "131.140.2943.21",
+							"changes": [
+								{
+									"at": "131.205.2943.22",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"lang": "en",
+							"description": ""
+						}
+					]
+				}
+			],
+			"impacts": [
+				{
+					"descriptions": [
+						{
+							"lang": "en",
+							"value": ""
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV4_0": {
+						"version": "4.0",
+						"vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:U/AU:N/R:U/V:D/RE:L/U:Amber",
+						"baseScore": 8.6,
+						"baseSeverity": "HIGH",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"attackRequirements": "NONE",
+						"privilegesRequired": "NONE",
+						"userInteraction": "ACTIVE",
+						"vulnConfidentialityImpact": "HIGH",
+						"vulnIntegrityImpact": "HIGH",
+						"vulnAvailabilityImpact": "HIGH",
+						"subConfidentialityImpact": "NONE",
+						"subIntegrityImpact": "NONE",
+						"subAvailabilityImpact": "NONE",
+						"exploitMaturity": "UNREPORTED",
+						"Safety": "NOT_DEFINED",
+						"Automatable": "NO",
+						"Recovery": "USER",
+						"valueDensity": "DIFFUSE",
+						"vulnerabilityResponseEffort": "LOW",
+						"providerUrgency": "AMBER",
+						"threatScore": 6.1,
+						"threatSeverity": "MEDIUM"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "No workaround or mitigation is available.\n",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "<span>No workaround or mitigation is available.</span>"
+						}
+					]
+				}
+			],
+			"solutions": [
+				{
+					"lang": "eng",
+					"value": "The following CVEs are fixed in the specified Prisma Access Browser versions and all later Prisma Access Browser versions.\n\n\nCVE              PRISMA ACCESS BROWSER\nCVE-2024-12381   131.140.2943.21\nCVE-2024-12382   131.140.2943.21\nCVE-2024-12692   131.205.2943.22\nCVE-2024-12693   131.205.2943.22\nCVE-2024-12694   131.205.2943.22\nCVE-2024-12695   131.205.2943.22",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "<span>The following CVEs are fixed in the specified Prisma Access Browser versions and all later Prisma Access Browser versions.</span><br><table class=\"tbl\"><thead><tr><th>CVE</th><th>Prisma Access Browser<br></th></tr></thead><tbody><tr><td>CVE-2024-12381<br></td><td>131.140.2943.21</td></tr><tr><td>CVE-2024-12382</td><td>131.140.2943.21</td></tr><tr><td>CVE-2024-12692<br></td><td><div><div>131.205.2943.22</div></div></td></tr><tr><td>CVE-2024-12693<br></td><td>131.205.2943.22</td></tr><tr><td>CVE-2024-12694<br></td><td>131.205.2943.22</td></tr><tr><td>CVE-2024-12695<br></td><td>131.205.2943.22</td></tr></tbody></table>"
+						}
+					]
+				}
+			],
+			"exploits": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks is not aware of any malicious exploitation of this issue.\n",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "<span>Palo Alto Networks is not aware of any malicious exploitation of this issue.</span>"
+						}
+					]
+				}
+			],
+			"configurations": [
+				{
+					"lang": "en",
+					"value": "No special configuration is required to be affected by this issue.\n",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "<span>No special configuration is required to be affected by this issue.</span>"
+						}
+					]
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"vendor-advisory"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2025-0002"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2025-01-08T17:00:00.000Z",
+					"lang": "en",
+					"value": "Initial publication"
+				}
+			],
+			"source": {
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2025-01-08T17:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.1.0-dev"
+			}
+		}
+	}
+}

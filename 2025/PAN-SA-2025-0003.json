@@ -1,0 +1,225 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2025-0003",
+		"assignerOrgId": "00000000-0000-4000-9000-000000000000",
+		"serial": 1,
+		"state": "PUBLISHED"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "00000000-0000-4000-9000-000000000000"
+			},
+			"title": "Informational: PAN-OS BIOS and Bootloader Security Bulletin",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks is aware of claims of multiple vulnerabilities in hardware device firmware and bootloaders included in our PA-Series (hardware) firewalls.\n\nIt is not possible for malicious actors or PAN-OS administrators to exploit these vulnerabilities under normal conditions on PAN-OS versions with up-to-date, secured management interfaces deployed according to the best practices guidelines (https://docs.paloaltonetworks.com/best-practices/10-1/administrative-access-best-practices/administrative-access-best-practices/deploy-administrative-access-best-practices). Users and administrators do not have access to the BIOS firmware or permissions to modify it. An attacker would need to first compromise the system and then get the root Linux privileges necessary to perform these actions before they could exploit these vulnerabilities. These vulnerabilities themselves do not allow an attacker to compromise the PAN-OS software on the firewall.\n\nNone of the concerns are applicable to PAN-OS CN-Series, PAN-OS VM-Series, Cloud NGFW and Prisma Access.",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "Palo Alto Networks is aware of claims of multiple vulnerabilities in hardware device firmware and bootloaders included in our PA-Series (hardware) firewalls.<br> <br>It is not possible for malicious actors or PAN-OS administrators to exploit these vulnerabilities under normal conditions on PAN-OS versions with up-to-date, secured management interfaces deployed according to the <a target=\"_blank\" rel=\"nofollow\" href=\"https://docs.paloaltonetworks.com/best-practices/10-1/administrative-access-best-practices/administrative-access-best-practices/deploy-administrative-access-best-practices\">best practices guidelines</a>. Users and administrators do not have access to the BIOS firmware or permissions to modify it. An attacker would need to first compromise the system and then get the root Linux privileges necessary to perform these actions before they could exploit these vulnerabilities. These vulnerabilities themselves do not allow an attacker to compromise the PAN-OS software on the firewall.<br><br>None of the concerns are applicable to PAN-OS CN-Series, PAN-OS VM-Series, Cloud NGFW and Prisma Access."
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Cloud NGFW",
+					"defaultStatus": "unaffected",
+					"versions": [
+						{
+							"status": "unaffected",
+							"versionType": "custom",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "PAN-OS",
+					"platforms": [
+						"PA-3200",
+						"PA-5200",
+						"PA-7000"
+					],
+					"defaultStatus": "affected",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": " All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Prisma Access",
+					"defaultStatus": "unaffected",
+					"versions": [
+						{
+							"status": "unaffected",
+							"versionType": "custom",
+							"version": "All"
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"lang": "en",
+							"description": ""
+						}
+					]
+				}
+			],
+			"impacts": [
+				{
+					"descriptions": [
+						{
+							"lang": "en",
+							"value": ""
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV4_0": {
+						"version": "4.0",
+						"vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:N/SA:N",
+						"baseScore": 0,
+						"baseSeverity": "NONE",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"attackRequirements": "NONE",
+						"privilegesRequired": "NONE",
+						"userInteraction": "NONE",
+						"vulnConfidentialityImpact": "NONE",
+						"vulnIntegrityImpact": "NONE",
+						"vulnAvailabilityImpact": "NONE",
+						"subConfidentialityImpact": "NONE",
+						"subIntegrityImpact": "NONE",
+						"subAvailabilityImpact": "NONE",
+						"exploitMaturity": "NOT_DEFINED",
+						"Safety": "NOT_DEFINED",
+						"Automatable": "NOT_DEFINED",
+						"Recovery": "NOT_DEFINED",
+						"valueDensity": "NOT_DEFINED",
+						"vulnerabilityResponseEffort": "NOT_DEFINED",
+						"providerUrgency": "NOT_DEFINED",
+						"threatScore": 0,
+						"threatSeverity": "NONE"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "These vulnerabilities require an attacker to compromise PAN-OS software before they can successfully exploit it. The risk of exploitation on PAN-OS software is reduced by upgrading your appliances to the latest versions.\n\nAdditionally secure access to the management web interface by restricting access to only trusted internal IP addresses according to our recommended best practice deployment guidelines (https://docs.paloaltonetworks.com/best-practices).",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "These vulnerabilities require an attacker to compromise PAN-OS software before they can successfully exploit it. The risk of exploitation on PAN-OS software is reduced by upgrading your appliances to the latest versions.<br><br>Additionally secure access to the management web interface by restricting access to only trusted internal IP addresses according to our recommended <a target=\"_blank\" rel=\"nofollow\" href=\"https://docs.paloaltonetworks.com/best-practices\">best practice deployment guidelines</a>."
+						}
+					]
+				}
+			],
+			"solutions": [
+				{
+					"lang": "eng",
+					"value": "While the conditions required to exploit these vulnerabilities are not available to users protected by PAN-OS or administrators of PAN-OS software, we are working with the third-party vendors to develop any firmware updates that may be needed. We will provide further updates and guidance as they become available.",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "While the conditions required to exploit these vulnerabilities are not available to users protected by PAN-OS or administrators of PAN-OS software, we are working with the third-party vendors to develop any firmware updates that may be needed. We will provide further updates and guidance as they become available."
+						}
+					]
+				}
+			],
+			"exploits": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks is not aware of any malicious exploitation of these issues in our products. We are aware of a blog post discussing these issues.\n",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "Palo Alto Networks is not aware of any malicious exploitation of these issues in our products.&nbsp;We are aware of a blog post discussing these issues."
+						}
+					]
+				}
+			],
+			"configurations": [
+				{
+					"lang": "en",
+					"value": "The following vulnerabilities are exploitable only when an attacker has already compromised the PAN-OS software and gained root Linux privileges on the system or physical access to open the device. This is not possible under normal conditions on PAN-OS versions that are up-to-date and deployed according to best practices (https://docs.paloaltonetworks.com/best-practices/10-1/administrative-access-best-practices/administrative-access-best-practices/deploy-administrative-access-best-practices): CVE-2020-10713, CVE-2021-33627, CVE-2021-42060, CVE-2021-42554, CVE-2021-43323, CVE-2021-45970, CVE-2022-24030. \n\nAll other CVEs are not exploitable under any circumstances as conditions to exploit these CVEs do not exist in PAN-OS. We have provide more details in the CVE table in the Description section above.",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "The following vulnerabilities are exploitable only when an attacker has already compromised the PAN-OS software and gained root Linux privileges on the system or physical access to open the device. This is not possible under normal conditions on PAN-OS versions that are up-to-date and deployed according to <a target=\"_blank\" rel=\"nofollow\" href=\"https://docs.paloaltonetworks.com/best-practices/10-1/administrative-access-best-practices/administrative-access-best-practices/deploy-administrative-access-best-practices\">best practices</a>:&nbsp;CVE-2020-10713,&nbsp;CVE-2021-33627,&nbsp;CVE-2021-42060,&nbsp;CVE-2021-42554,&nbsp;CVE-2021-43323,&nbsp;CVE-2021-45970,&nbsp;CVE-2022-24030.&nbsp;<br><br>All other CVEs are not exploitable under any circumstances as conditions to exploit these CVEs do not exist in PAN-OS. We have provide more details in the CVE table in the Description section above."
+						}
+					]
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"vendor-advisory"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2025-0003"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2025-01-23T23:20:00.000Z",
+					"lang": "en",
+					"value": "Initial publication"
+				},
+				{
+					"time": "2025-01-24T23:45:00.000Z",
+					"lang": "en",
+					"value": "Added more clarifying language and fixed Product types in CVE Table."
+				},
+				{
+					"time": "2025-01-27T19:00:00.000Z",
+					"lang": "en",
+					"value": "Clarified the Required Configuration for Exposure section."
+				},
+				{
+					"time": "2025-01-27T22:45:00.000Z",
+					"lang": "en",
+					"value": "Updated the Required Configuration for Exposure to indicate that none of the network related CVEs apply to PAN-OS."
+				},
+				{
+					"time": "2025-03-26T22:30:00.000Z",
+					"lang": "en",
+					"value": "Added clarifying language in the CVE Table."
+				}
+			],
+			"source": {
+				"discovery": "UNKNOWN"
+			},
+			"datePublic": "2025-01-23T23:20:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.1.0-dev"
+			}
+		}
+	}
+}

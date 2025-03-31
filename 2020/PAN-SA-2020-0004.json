@@ -1,0 +1,128 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2020-0004",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2020-05-13T00:00:00",
+		"dateUpdated": "2020-05-13T00:00:00.000000Z",
+		"dateReserved": "2020-05-13T00:00:00"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Informational: Third-party or open source vulnerabilities that do not affect PAN-OS",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks Product Security Assurance team has evaluated and determined that these third-party or open source vulnerabilities do not have a security impact on PAN-OS, or the scenarios required for successful exploitation do not exist on PAN-OS.",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>Palo Alto Networks Product Security Assurance team has evaluated and determined that these third-party or open source vulnerabilities do not have a security impact on PAN-OS, or the scenarios required for successful exploitation do not exist on PAN-OS.</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "PAN-OS",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "text",
+							"lang": "en",
+							"description": "no security impact"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:P/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:N",
+						"attackVector": "PHYSICAL",
+						"attackComplexity": "HIGH",
+						"privilegesRequired": "HIGH",
+						"userInteraction": "REQUIRED",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "NONE",
+						"integrityImpact": "NONE",
+						"availabilityImpact": "NONE",
+						"baseScore": 0,
+						"baseSeverity": "NONE"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "None",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "None"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "No product updates are required for these issues.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "No product updates are required for these issues."
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2020-05-13T16:00:00.000Z",
+					"lang": "eng",
+					"value": "Initial publication"
+				}
+			],
+			"source": {
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2020-05-13T16:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			}
+		}
+	}
+}

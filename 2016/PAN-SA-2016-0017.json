@@ -1,0 +1,164 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2016-0017",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2016-08-04T20:00:00.000Z",
+		"dateReserved": "2016-08-04T20:00:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Local Privilege Escalation in GlobalProtect App for OS X",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "A vulnerability was recently identified which allows a local user to escalate privileges through the GlobalProtect App for OS X (Ref # 97042).\nLocal users not entitled to the admin context on OS X could use this vulnerability to run processes with higher rights.\nThis issue affects GlobalProtect App for OS X 2.3.4 and earlier; GlobalProtect 3.0.2 and earlier",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>A vulnerability was recently identified which allows a local user to escalate privileges through the GlobalProtect App for OS X (Ref # 97042).\nLocal users not entitled to the admin context on OS X could use this vulnerability to run processes with higher rights.\nThis issue affects GlobalProtect App for OS X 2.3.4 and earlier; GlobalProtect 3.0.2 and earlier</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "GlobalProtect App",
+					"platforms": [
+						"OS X"
+					],
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "2.3",
+							"lessThanOrEqual": "2.3.4"
+						},
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "3.0",
+							"lessThanOrEqual": "3.0.2"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "GlobalProtect App",
+					"versions": [
+						{
+							"status": "unaffected",
+							"versionType": "custom",
+							"version": "2.3.5",
+							"lessThan": "2.3*"
+						},
+						{
+							"status": "unaffected",
+							"versionType": "custom",
+							"version": "3.0.3",
+							"lessThan": "3.0*"
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "text",
+							"lang": "en",
+							"description": "Local Privilege Escalation in GlobalProtect App for OS X"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+						"attackVector": "LOCAL",
+						"attackComplexity": "LOW",
+						"privilegesRequired": "LOW",
+						"userInteraction": "NONE",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "HIGH",
+						"integrityImpact": "HIGH",
+						"availabilityImpact": "HIGH",
+						"baseScore": 7.8,
+						"baseSeverity": "HIGH"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "N/A",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "N/A"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "GlobalProtect App for OS X 2.3.5 and later; GlobalProtect 3.0.3 and later",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "GlobalProtect App for OS X 2.3.5 and later; GlobalProtect 3.0.3 and later"
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2016-0017"
+				}
+			],
+			"credits": [
+				{
+					"lang": "en",
+					"value": "Luke Young, Uber"
+				}
+			],
+			"source": {
+				"advisory": "PAN-SA-2016-0017",
+				"defect": [
+					"97042"
+				],
+				"discovery": "UNKNOWN"
+			},
+			"datePublic": "2016-08-04T20:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			},
+			"x_affectedList": [
+				"GlobalProtect App 3.0.2",
+				"GlobalProtect App 3.0.1",
+				"GlobalProtect App 3.0.0",
+				"GlobalProtect App 3.0",
+				"GlobalProtect App 2.3.4",
+				"GlobalProtect App 2.3.3",
+				"GlobalProtect App 2.3.2",
+				"GlobalProtect App 2.3.1",
+				"GlobalProtect App 2.3.0",
+				"GlobalProtect App 2.3"
+			]
+		}
+	}
+}

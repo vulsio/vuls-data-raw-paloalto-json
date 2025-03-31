@@ -1,0 +1,171 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2022-0002",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2022-04-14T00:00:00",
+		"dateUpdated": "2022-05-13T00:00:00.000000Z",
+		"dateReserved": "2022-04-14T00:00:00"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Informational: Cortex XDR Agent: Product Disruption by Local Windows Administrator",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "The Palo Alto Networks Product Security Assurance team is aware of a technique that can enable a local administrator to tamper with the Windows registry to disable the Cortex XDR agent on devices running a Windows operating system.\n\nAs a result, critical Windows system services would not be available and normal usage of the device would be disrupted. Please note, the device must be rebooted for this to take effect.\n\nThis issue does not have a net security impact on the confidentiality, integrity, or availability of the system. The local Windows administrator is able to disrupt normal usage of the device without this technique.\n",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>The Palo Alto Networks Product Security Assurance team is aware of a technique that can enable a local administrator to tamper with the Windows registry to disable the Cortex XDR agent on devices running a Windows operating system.\n\nAs a result, critical Windows system services would not be available and normal usage of the device would be disrupted. Please note, the device must be rebooted for this to take effect.\n\nThis issue does not have a net security impact on the confidentiality, integrity, or availability of the system. The local Windows administrator is able to disrupt normal usage of the device without this technique.\n</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Cortex XDR Agent",
+					"platforms": [
+						"Windows"
+					],
+					"versions": [
+						{
+							"status": "affected",
+							"version": "All"
+						}
+					]
+				},
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Cortex XDR Agent",
+					"platforms": [
+						"Linux and macOS"
+					],
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:P/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:N",
+						"attackVector": "PHYSICAL",
+						"attackComplexity": "HIGH",
+						"privilegesRequired": "HIGH",
+						"userInteraction": "REQUIRED",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "NONE",
+						"integrityImpact": "NONE",
+						"availabilityImpact": "NONE",
+						"baseScore": 0,
+						"baseSeverity": "NONE"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "There is no known workaround available for this issue.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "There is no known workaround available for this issue."
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "This tampering is prevented with Cortex XDR agent content update 480 and later content updates.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "This tampering is prevented with Cortex XDR agent content update 480 and later content updates."
+					}
+				}
+			],
+			"exploits": [
+				{
+					"lang": "en",
+					"value": "While details of this issue are publicly available, Palo Alto Networks is not aware of any malicious exploitation of this issue.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "While details of this issue are publicly available, Palo Alto Networks is not aware of any malicious exploitation of this issue."
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2022-0002"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2022-04-23T18:45:00.000Z",
+					"lang": "eng",
+					"value": "A Cortex XDR agent content update is available to address this issue."
+				},
+				{
+					"time": "2022-04-14T23:00:00.000Z",
+					"lang": "eng",
+					"value": "Clarification on the impact of this issue and new ETA for the content update."
+				},
+				{
+					"time": "2022-04-14T00:30:00.000Z",
+					"lang": "eng",
+					"value": "Initial publication"
+				},
+				{
+					"time": "2022-05-13T05:05:00.000Z",
+					"lang": "eng",
+					"value": "Update to advisory language"
+				}
+			],
+			"credits": [
+				{
+					"lang": "en",
+					"value": "This issue was found by mr.d0x, an external security researcher."
+				}
+			],
+			"source": {
+				"defect": [
+					"CPATR-14161"
+				],
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2022-04-14T00:30:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			},
+			"x_affectedList": [
+				"Cortex XDR Agent"
+			]
+		}
+	}
+}

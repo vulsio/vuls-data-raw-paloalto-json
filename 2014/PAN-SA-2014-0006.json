@@ -1,0 +1,135 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2014-0006",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2014-12-10T08:00:00.000Z",
+		"dateReserved": "2014-12-10T08:00:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Privilege escalation in GlobalProtect App for Mac OS X",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "A path injection vulnerability affecting the GlobalProtect App for Mac OS X 2.1.0 and earlier could allow a local attacker to gain elevated privileges on a targeted system.\nSuccessful exploitation of this vulnerability results in a lower privileged user obtaining elevated privileges. A local attacker could exploit this vulnerability to execute arbitrary code in the security context of the local system.\nThis issue affects GlobalProtect app version 2.1.0 and earlier for Mac OS X.",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>A path injection vulnerability affecting the GlobalProtect App for Mac OS X 2.1.0 and earlier could allow a local attacker to gain elevated privileges on a targeted system.\nSuccessful exploitation of this vulnerability results in a lower privileged user obtaining elevated privileges. A local attacker could exploit this vulnerability to execute arbitrary code in the security context of the local system.\nThis issue affects GlobalProtect app version 2.1.0 and earlier for Mac OS X.</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "GlobalProtect App",
+					"platforms": [
+						"Mac OS X"
+					],
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "2.1",
+							"lessThanOrEqual": "2.1.0",
+							"changes": [
+								{
+									"at": "2.1.1",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "text",
+							"lang": "en",
+							"description": "Privilege escalation in GlobalProtect App for Mac OS X"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+						"attackVector": "LOCAL",
+						"attackComplexity": "LOW",
+						"privilegesRequired": "LOW",
+						"userInteraction": "REQUIRED",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "HIGH",
+						"integrityImpact": "HIGH",
+						"availabilityImpact": "HIGH",
+						"baseScore": 7.3,
+						"baseSeverity": "HIGH"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "N/A",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "N/A"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "GlobalProtect 2.1.1 for Mac OS X addresses the issue described in this advisory.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "GlobalProtect 2.1.1 for Mac OS X addresses the issue described in this advisory."
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2014-0006"
+				}
+			],
+			"credits": [
+				{
+					"lang": "en",
+					"value": "Alexandru Radocea of CrowdStrike"
+				}
+			],
+			"source": {
+				"advisory": "PAN-SA-2014-0006",
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2014-12-10T08:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			},
+			"x_affectedList": [
+				"GlobalProtect App 2.1.0",
+				"GlobalProtect App 2.1"
+			]
+		}
+	}
+}

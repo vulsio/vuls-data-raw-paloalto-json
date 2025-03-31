@@ -1,0 +1,166 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2020-0003",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2020-04-08T16:00:00.000Z",
+		"dateReserved": "2020-04-08T16:00:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Informational: Third-party or open source vulnerabilities that do not affect Palo Alto Networks Products",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks Product Security Assurance team has evaluated and determined that these third-party or open source vulnerabilities do not have a security impact on Palo Alto Networks Products, or the scenarios required for successful exploitation do not exist on Palo Alto Networks Products.",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>Palo Alto Networks Product Security Assurance team has evaluated and determined that these third-party or open source vulnerabilities do not have a security impact on Palo Alto Networks Products, or the scenarios required for successful exploitation do not exist on Palo Alto Networks Products.</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "PAN-OS",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "text",
+							"lang": "en",
+							"description": "No problem"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:P/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:N",
+						"attackVector": "PHYSICAL",
+						"attackComplexity": "HIGH",
+						"privilegesRequired": "HIGH",
+						"userInteraction": "REQUIRED",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "NONE",
+						"integrityImpact": "NONE",
+						"availabilityImpact": "NONE",
+						"baseScore": 0,
+						"baseSeverity": "NONE"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "None",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "None"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "No product updates are required for these issues.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "No product updates are required for these issues."
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-16905"
+				},
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-6110"
+				},
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00255.html"
+				},
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00313.html"
+				},
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00336.html"
+				},
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00339.html"
+				},
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00340.html"
+				},
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00341.html"
+				}
+			],
+			"source": {
+				"defect": [
+					"PAN-111636",
+					"PAN-141921"
+				],
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2020-04-08T16:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			}
+		}
+	}
+}

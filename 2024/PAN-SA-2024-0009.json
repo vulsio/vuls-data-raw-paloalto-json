@@ -1,0 +1,130 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2024-0009",
+		"assignerOrgId": "00000000-0000-4000-9000-000000000000",
+		"assignerShortName": "palo_alto",
+		"serial": 1,
+		"state": "PUBLISHED",
+		"datePublished": "2024-09-11T07:00:00.000Z",
+		"dateUpdated": "2024-09-11T00:00:00.000Z",
+		"dateReserved": "2024-09-11T07:00:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "00000000-0000-4000-9000-000000000000",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T08:00:00.000Z"
+			},
+			"title": "Prisma Access Browser: Monthly Vulnerability Updates",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "Prisma Access Browser has incorporated the latest upstream Chromium security fixes listed here:\n- https://chromereleases.googleblog.com/2024/08/stable-channel-update-for-desktop_21.html\n- https://chromereleases.googleblog.com/2024/08/stable-channel-update-for-desktop_28.html\n- https://chromereleases.googleblog.com/2024/09/stable-channel-update-for-desktop.html\n- https://chromereleases.googleblog.com/2024/09/stable-channel-update-for-desktop_10.html",
+					"supportingMedia": [
+						{
+							"base64": true,
+							"type": "text/html",
+							"value": "<pre>Prisma Access Browser has incorporated the latest upstream Chromium security fixes listed here:\n- https://chromereleases.googleblog.com/2024/08/stable-channel-update-for-desktop_21.html\n- https://chromereleases.googleblog.com/2024/08/stable-channel-update-for-desktop_28.html\n- https://chromereleases.googleblog.com/2024/09/stable-channel-update-for-desktop.html\n- https://chromereleases.googleblog.com/2024/09/stable-channel-update-for-desktop_10.html</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Prisma Access Browser",
+					"defaultStatus": "unaffected",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "0",
+							"lessThan": "128.91.2869.7",
+							"changes": [
+								{
+									"at": "128.138.2888.2",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV4_0": {
+						"version": "4.0",
+						"vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/AU:N/R:A/V:D/RE:L/U:Amber",
+						"baseScore": 8.6,
+						"baseSeverity": "HIGH",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"attackRequirements": "NONE",
+						"privilegesRequired": "NONE",
+						"userInteraction": "ACTIVE",
+						"vulnConfidentialityImpact": "HIGH",
+						"vulnIntegrityImpact": "HIGH",
+						"vulnAvailabilityImpact": "HIGH",
+						"subConfidentialityImpact": "NONE",
+						"subIntegrityImpact": "NONE",
+						"subAvailabilityImpact": "NONE",
+						"Safety": "NOT_DEFINED",
+						"Automatable": "NO",
+						"Recovery": "AUTOMATIC",
+						"valueDensity": "DIFFUSE",
+						"vulnerabilityResponseEffort": "LOW",
+						"providerUrgency": "AMBER"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "Prisma Access Browser 128.138.2888.2 and later versions contain the fixes for all CVEs listed above.",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "Prisma Access Browser 128.138.2888.2 and later versions contain the fixes for all CVEs listed above."
+						}
+					]
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2024-0009"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2024-09-11T16:00:00.000Z",
+					"lang": "eng",
+					"value": "Initial publication"
+				}
+			],
+			"source": {
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2024-09-11T16:00:00.000Z",
+			"x_generator": {
+				"engine": "vulnogram 0.1.0-rc1"
+			},
+			"x_affectedList": [
+				"Prisma Access Browser"
+			]
+		}
+	}
+}

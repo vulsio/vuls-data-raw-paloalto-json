@@ -1,0 +1,138 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2019-0004",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2019-03-12T17:00:00.000Z",
+		"dateReserved": "2019-03-12T17:00:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Cross-Site Scripting in Expedition Migration Tool",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "Three cross-site scripting (XSS) vulnerabilities exist in the Palo Alto Networks Migration Tool (“Expedition”). (Ref # MT-926/ CVE-2019-1569; MT-927/ CVE-2019-1570; MT-928, MT-929/ CVE-2019-1571)\nCVE-2019-1569: Successful exploitation of this issue may allow an authenticated attacker to inject arbitrary JavaScript or HTML in the User Mapping settings.\n\nCVE-2019-1570: Successful exploitation of this issue may allow an authenticated attacker to inject arbitrary JavaScript or HTML in the LDAP server settings.\n\nCVE-2019-1571: Successful exploitation of this issue may allow an authenticated attacker to inject arbitrary JavaScript or HTML in the RADIUS server settings.\n\nThis issue affects Expedition 1.1.8 and earlier.\n\nNote that this issue only impacts the Palo Alto Networks Migration Tool (“Expedition”), a tool available from the Palo Alto Networks Live site.  This issue does not affect PAN-OS or any other supported product or service.  For more information on Expedition, see: https://live.paloaltonetworks.com/t5/Expedition-Migration-Tool/ct-p/migration_tool.  ",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>Three cross-site scripting (XSS) vulnerabilities exist in the Palo Alto Networks Migration Tool (“Expedition”). (Ref # MT-926/ CVE-2019-1569; MT-927/ CVE-2019-1570; MT-928, MT-929/ CVE-2019-1571)\nCVE-2019-1569: Successful exploitation of this issue may allow an authenticated attacker to inject arbitrary JavaScript or HTML in the User Mapping settings.\n\nCVE-2019-1570: Successful exploitation of this issue may allow an authenticated attacker to inject arbitrary JavaScript or HTML in the LDAP server settings.\n\nCVE-2019-1571: Successful exploitation of this issue may allow an authenticated attacker to inject arbitrary JavaScript or HTML in the RADIUS server settings.\n\nThis issue affects Expedition 1.1.8 and earlier.\n\nNote that this issue only impacts the Palo Alto Networks Migration Tool (“Expedition”), a tool available from the Palo Alto Networks Live site.  This issue does not affect PAN-OS or any other supported product or service.  For more information on Expedition, see: https://live.paloaltonetworks.com/t5/Expedition-Migration-Tool/ct-p/migration_tool.  </pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Expedition",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "1.1",
+							"lessThanOrEqual": "1.1.8",
+							"changes": [
+								{
+									"at": "1.1.9",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "CWE",
+							"lang": "en",
+							"description": "CWE-79 Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+							"cweId": "CWE-79"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"privilegesRequired": "HIGH",
+						"userInteraction": "REQUIRED",
+						"scope": "CHANGED",
+						"confidentialityImpact": "LOW",
+						"integrityImpact": "LOW",
+						"availabilityImpact": "NONE",
+						"baseScore": 4.8,
+						"baseSeverity": "MEDIUM"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "N/A",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "N/A"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "Expedition 1.1.9 and later",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "Expedition 1.1.9 and later"
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2019-0004"
+				}
+			],
+			"credits": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks would like to thank Sayali Kulkarni of Tenable for reporting these issues."
+				}
+			],
+			"source": {
+				"advisory": "PAN-SA-2019-0004",
+				"defect": [
+					"MT-926",
+					"MT-927",
+					"MT-928",
+					"MT-929"
+				],
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2019-03-12T17:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			},
+			"x_affectedList": [
+				"Expedition 1.1"
+			]
+		}
+	}
+}

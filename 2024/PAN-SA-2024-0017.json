@@ -1,0 +1,161 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2024-0017",
+		"assignerOrgId": "00000000-0000-4000-9000-000000000000",
+		"serial": 1,
+		"state": "PUBLISHED"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "00000000-0000-4000-9000-000000000000"
+			},
+			"title": "Chromium: Monthly Vulnerability Updates",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks incorporated the following Chromium security fixes into our products:\n * https://chromereleases.googleblog.com/2024/11/stable-channel-update-for-desktop_19.html\n * https://chromereleases.googleblog.com/2024/12/stable-channel-update-for-desktop.html",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "<div>Palo Alto Networks incorporated the following Chromium security fixes into our products:</div><div><ul><li><a target=\"_blank\" rel=\"nofollow\" href=\"https://chromereleases.googleblog.com/2024/11/stable-channel-update-for-desktop_19.html\">https://chromereleases.googleblog.com/2024/11/stable-channel-update-for-desktop_19.html</a></li><li><a target=\"_blank\" rel=\"nofollow\" href=\"https://chromereleases.googleblog.com/2024/12/stable-channel-update-for-desktop.html\">https://chromereleases.googleblog.com/2024/12/stable-channel-update-for-desktop.html</a></li></ul></div>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Prisma Access Browser",
+					"defaultStatus": "unaffected",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "131.86.2955.0",
+							"lessThan": "131.109.2968.0",
+							"changes": [
+								{
+									"at": "131.86.2955.0",
+									"status": "unaffected"
+								},
+								{
+									"at": "131.109.2968.0",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"lang": "en",
+							"description": ""
+						}
+					]
+				}
+			],
+			"impacts": [
+				{
+					"descriptions": [
+						{
+							"lang": "en",
+							"value": ""
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV4_0": {
+						"version": "4.0",
+						"vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:U/AU:N/R:U/V:D/RE:L/U:Amber",
+						"baseScore": 8.6,
+						"baseSeverity": "HIGH",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"attackRequirements": "NONE",
+						"privilegesRequired": "NONE",
+						"userInteraction": "ACTIVE",
+						"vulnConfidentialityImpact": "HIGH",
+						"vulnIntegrityImpact": "HIGH",
+						"vulnAvailabilityImpact": "HIGH",
+						"subConfidentialityImpact": "NONE",
+						"subIntegrityImpact": "NONE",
+						"subAvailabilityImpact": "NONE",
+						"exploitMaturity": "UNREPORTED",
+						"Safety": "NOT_DEFINED",
+						"Automatable": "NO",
+						"Recovery": "USER",
+						"valueDensity": "DIFFUSE",
+						"vulnerabilityResponseEffort": "LOW",
+						"providerUrgency": "AMBER",
+						"threatScore": 6.1,
+						"threatSeverity": "MEDIUM"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "eng",
+					"value": "The following CVEs are fixed in the specified Prisma Access Browser version and all later Prisma Access Browser versions.\n\n\nCVE              PRISMA ACCESS BROWSER\nCVE-2024-11395   131.86.2955.0\nCVE-2024-12053   131.109.2968.0\n",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "The following CVEs are fixed in the specified Prisma Access Browser version and all later Prisma Access Browser versions.<br><table class=\"tbl\"><thead><tr><th>CVE</th><th>Prisma Access Browser</th></tr></thead><tbody><tr><td>CVE-2024-11395</td><td>131.86.2955.0</td></tr><tr><td>CVE-2024-12053</td><td>131.109.2968.0</td></tr></tbody></table>"
+						}
+					]
+				}
+			],
+			"exploits": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks is not aware of any malicious exploitation of these issues.",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "Palo Alto Networks is not aware of any malicious exploitation of these issues."
+						}
+					]
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"vendor-advisory"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2024-0017"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2024-12-11T17:00:00.000Z",
+					"lang": "en",
+					"value": "Initial publication"
+				}
+			],
+			"source": {
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2024-12-11T17:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.1.0-dev"
+			}
+		}
+	}
+}

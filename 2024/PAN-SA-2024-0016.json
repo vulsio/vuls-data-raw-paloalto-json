@@ -1,0 +1,142 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2024-0016",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2024-11-13T18:00:00.000Z",
+		"dateUpdated": "2024-11-13T00:00:00.000000Z",
+		"dateReserved": "2024-11-13T18:00:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Chromium: Monthly Vulnerability Updates",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks incorporated the following Chromium security fixes into its products:\n\n\n * https://chromereleases.googleblog.com/2024/10/stable-channel-update-for-desktop_15.html\n * https://chromereleases.googleblog.com/2024/10/stable-channel-update-for-desktop_22.html\n * https://chromereleases.googleblog.com/2024/10/stable-channel-update-for-desktop_29.html\n * https://chromereleases.googleblog.com/2024/11/stable-channel-update-for-desktop.html\n\n",
+					"supportingMedia": [
+						{
+							"base64": true,
+							"type": "text/html",
+							"value": "<p>Palo Alto Networks incorporated the following Chromium security fixes into its products:<br></p><ul><li><a target=\"_blank\" rel=\"nofollow\" href=\"https://chromereleases.googleblog.com/2024/10/stable-channel-update-for-desktop_15.html\">https://chromereleases.googleblog.com/2024/10/stable-channel-update-for-desktop_15.html</a></li><li><a target=\"_blank\" rel=\"nofollow\" href=\"https://chromereleases.googleblog.com/2024/10/stable-channel-update-for-desktop_22.html\">https://chromereleases.googleblog.com/2024/10/stable-channel-update-for-desktop_22.html</a></li><li><a target=\"_blank\" rel=\"nofollow\" href=\"https://chromereleases.googleblog.com/2024/10/stable-channel-update-for-desktop_29.html\">https://chromereleases.googleblog.com/2024/10/stable-channel-update-for-desktop_29.html</a></li><li><a target=\"_blank\" rel=\"nofollow\" href=\"https://chromereleases.googleblog.com/2024/11/stable-channel-update-for-desktop.html\">https://chromereleases.googleblog.com/2024/11/stable-channel-update-for-desktop.html</a></li></ul><p></p>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Prisma Access Browser",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "unspecified",
+							"lessThan": "130.59.2920.7"
+						},
+						{
+							"status": "unaffected",
+							"versionType": "custom",
+							"version": "130.117.2920.13",
+							"lessThan": "unspecified"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV4_0": {
+						"version": "4.0",
+						"vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/AU:N/R:A/V:D/RE:L/U:Amber",
+						"baseScore": 8.6,
+						"baseSeverity": "HIGH",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"attackRequirements": "NONE",
+						"privilegesRequired": "NONE",
+						"userInteraction": "ACTIVE",
+						"vulnConfidentialityImpact": "HIGH",
+						"vulnIntegrityImpact": "HIGH",
+						"vulnAvailabilityImpact": "HIGH",
+						"subConfidentialityImpact": "NONE",
+						"subIntegrityImpact": "NONE",
+						"subAvailabilityImpact": "NONE",
+						"exploitMaturity": "NOT_DEFINED",
+						"Safety": "NOT_DEFINED",
+						"Automatable": "NO",
+						"Recovery": "AUTOMATIC",
+						"valueDensity": "DIFFUSE",
+						"vulnerabilityResponseEffort": "LOW",
+						"providerUrgency": "AMBER"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "CVE-2024-9954, CVE-2024-9955, CVE-2024-9956, CVE-2024-9957, CVE-2024-9958, CVE-2024-9959, CVE-2024-9960, CVE-2024-9961, CVE-2024-9962, CVE-2024-9963, CVE-2024-9964, CVE-2024-9965, and CVE-2024-9966 are fixed in Prisma Access Browser 130.59.2920.7, and all later Prisma Access Browser versions.\n\nCVE-2024-10229, CVE-2024-10230, and CVE-2024-10231 are fixed in Prisma Access Browser 130.70.2920.8, and all later Prisma Access Browser versions.\n\nCVE-2024-10487 and CVE-2024-10488 are fixed in Prisma Access Browser 130.92.2920.10, and all later Prisma Access Browser versions.\n\nCVE-2024-10826 and CVE-2024-10827 are fixed in Prisma Access Browser 130.117.2920.13, and all later Prisma Access Browser versions.",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "<p>CVE-2024-9954, CVE-2024-9955, CVE-2024-9956, CVE-2024-9957, CVE-2024-9958, CVE-2024-9959, CVE-2024-9960, CVE-2024-9961, CVE-2024-9962, CVE-2024-9963, CVE-2024-9964, CVE-2024-9965, and CVE-2024-9966 are fixed in Prisma Access Browser 130.59.2920.7, and all later Prisma Access Browser versions.</p><p>CVE-2024-10229, CVE-2024-10230, and CVE-2024-10231 are fixed in Prisma Access Browser 130.70.2920.8, and all later Prisma Access Browser versions.</p><p>CVE-2024-10487 and CVE-2024-10488 are fixed in Prisma Access Browser 130.92.2920.10, and all later Prisma Access Browser versions.</p><p>CVE-2024-10826 and CVE-2024-10827 are fixed in Prisma Access Browser 130.117.2920.13, and all later Prisma Access Browser versions.</p>"
+						}
+					]
+				}
+			],
+			"exploits": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks is not aware of any malicious exploitation of this issue.",
+					"supportingMedia": [
+						{
+							"base64": false,
+							"type": "text/html",
+							"value": "Palo Alto Networks is not aware of any malicious exploitation of this issue."
+						}
+					]
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2024-0016"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2024-11-13T17:00:00.000Z",
+					"lang": "eng",
+					"value": "Initial Publication"
+				}
+			],
+			"source": {
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2024-11-13T18:00:00.000Z",
+			"x_generator": {
+				"engine": "vulnogram 0.1.0-rc1"
+			},
+			"x_affectedList": [
+				"Prisma Access Browser"
+			]
+		}
+	}
+}

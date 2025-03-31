@@ -1,0 +1,154 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2021-0002",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2021-02-10T00:00:00",
+		"dateUpdated": "2021-03-10T00:00:00.000000Z",
+		"dateReserved": "2021-02-10T00:00:00"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Informational: PAN-OS: NAT slipstreaming v1.0 and v2.0 attacks",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "Network address translation (NAT) slipstreaming attacks v1.0 and v2.0 are network-based and they exploit weaknesses in web browsers and Application Level Gateways (ALGs) to expose internal network devices to an attacker.",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>Network address translation (NAT) slipstreaming attacks v1.0 and v2.0 are network-based and they exploit weaknesses in web browsers and Application Level Gateways (ALGs) to expose internal network devices to an attacker.</pre>"
+						}
+					]
+				},
+				{
+					"lang": "en",
+					"value": "The following threat prevention signatures prevent NAT slipstreaming attacks:\nNAT Slipstreaming Detection (59667)\nNAT Slipstreaming Detection (59668)\nNAT Slipstreaming Detection (59669)\nNAT Slipstreaming Detection (59671)\nNAT Slipstreaming Detection (59672)\n",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>The following threat prevention signatures prevent NAT slipstreaming attacks:\nNAT Slipstreaming Detection (59667)\nNAT Slipstreaming Detection (59668)\nNAT Slipstreaming Detection (59669)\nNAT Slipstreaming Detection (59671)\nNAT Slipstreaming Detection (59672)\n</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "PAN-OS",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"privilegesRequired": "NONE",
+						"userInteraction": "NONE",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "NONE",
+						"integrityImpact": "NONE",
+						"availabilityImpact": "NONE",
+						"baseScore": 0,
+						"baseSeverity": "NONE"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "If the threat prevention signatures cannot be applied or for additional protection:\n\nMany web browsers include a security fix that prevents NAT slipstreaming attacks. These are known to include:\n\nChrome v87.0.4280.141 and later versions;\nMicrosoft’s Edge v87.0.664.75 and later versions;\nSafari v14.0.3 and later versions;\nFirefox v85.0 and later versions.\n\nNAT Slipstreaming v2.0 attacks leverage H.323 and can be blocked by disallowing STUN application traffic in the PAN-OS appliance configuration.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "If the threat prevention signatures cannot be applied or for additional protection:\n\nMany web browsers include a security fix that prevents NAT slipstreaming attacks. These are known to include:\n\nChrome v87.0.4280.141 and later versions;\nMicrosoft’s Edge v87.0.664.75 and later versions;\nSafari v14.0.3 and later versions;\nFirefox v85.0 and later versions.\n\nNAT Slipstreaming v2.0 attacks leverage H.323 and can be blocked by disallowing STUN application traffic in the PAN-OS appliance configuration."
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "The following threat prevention signatures block all known risks of NAT slipstreaming attacks:\n\nNAT Slipstreaming Detection (59667)\nNAT Slipstreaming Detection (59668)\nNAT Slipstreaming Detection (59669)\nNAT Slipstreaming Detection (59671)\nNAT Slipstreaming Detection (59672)\n\nA PAN-OS software upgrade is not required to mitigate NAT slipstreaming attacks.\n",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "The following threat prevention signatures block all known risks of NAT slipstreaming attacks:\n\nNAT Slipstreaming Detection (59667)\nNAT Slipstreaming Detection (59668)\nNAT Slipstreaming Detection (59669)\nNAT Slipstreaming Detection (59671)\nNAT Slipstreaming Detection (59672)\n\nA PAN-OS software upgrade is not required to mitigate NAT slipstreaming attacks.\n"
+					}
+				}
+			],
+			"configurations": [
+				{
+					"lang": "en",
+					"value": "Cannot be exposed.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "Cannot be exposed."
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2021-002"
+				},
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://threatpost.com/remote-attackers-internal-network-devices-nat-slipstreaming/163400/"
+				}
+			],
+			"timeline": [
+				{
+					"time": "2021-02-10T17:00:00.000Z",
+					"lang": "eng",
+					"value": "Initial publication"
+				},
+				{
+					"time": "2021-03-10T17:00:00.000Z",
+					"lang": "eng",
+					"value": "Added workaround for customers without a Threat Prevention subscription"
+				}
+			],
+			"source": {
+				"defect": [
+					"PAN-162886",
+					"PAN-158041"
+				],
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2021-02-10T17:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			}
+		}
+	}
+}

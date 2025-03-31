@@ -1,0 +1,134 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2016-0022",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2016-08-25T19:00:00.000Z",
+		"dateReserved": "2016-08-25T19:00:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Remote Text File Access on Traps Endpoint Server Management",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "The Traps ESM Server license mechanism allows for remote license validation. The unintended ability to download text files using this subsystem was recently identified. (Ref # CYV-8717).\nThis vulnerability can be used to remotely retrieve text files stored on the Traps ESM.\nThis issue affects Traps ESM Core version 3.3.3 and earlier",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>The Traps ESM Server license mechanism allows for remote license validation. The unintended ability to download text files using this subsystem was recently identified. (Ref # CYV-8717).\nThis vulnerability can be used to remotely retrieve text files stored on the Traps ESM.\nThis issue affects Traps ESM Core version 3.3.3 and earlier</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "Traps ESM Core",
+					"versions": [
+						{
+							"status": "affected",
+							"versionType": "custom",
+							"version": "3.3",
+							"lessThanOrEqual": "3.3.3",
+							"changes": [
+								{
+									"at": "3.3.4",
+									"status": "unaffected"
+								}
+							]
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "text",
+							"lang": "en",
+							"description": "Remote Text File Access on Traps Endpoint Server Management"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+						"attackVector": "NETWORK",
+						"attackComplexity": "LOW",
+						"privilegesRequired": "NONE",
+						"userInteraction": "NONE",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "HIGH",
+						"integrityImpact": "NONE",
+						"availabilityImpact": "NONE",
+						"baseScore": 7.5,
+						"baseSeverity": "HIGH"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "N/A",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "N/A"
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "Traps ESM Core version 3.3.4 and later",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "Traps ESM Core version 3.3.4 and later"
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2016-0022"
+				}
+			],
+			"credits": [
+				{
+					"lang": "en",
+					"value": "Chen ChingRu"
+				}
+			],
+			"source": {
+				"advisory": "PAN-SA-2016-0022",
+				"defect": [
+					"CYV-8717"
+				],
+				"discovery": "UNKNOWN"
+			},
+			"datePublic": "2016-08-25T19:00:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			},
+			"x_affectedList": [
+				"Traps ESM Core 3.3"
+			]
+		}
+	}
+}

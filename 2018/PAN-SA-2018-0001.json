@@ -1,0 +1,122 @@
+{
+	"dataType": "CVE_RECORD",
+	"dataVersion": "5.0",
+	"cveMetadata": {
+		"cveId": "PAN-SA-2018-0001",
+		"assignerOrgId": "d6c1279f-00f6-4ef7-9217-f89ffe703ec0",
+		"assignerShortName": "palo_alto",
+		"state": "PUBLISHED",
+		"datePublished": "2018-01-05T00:16:00.000Z",
+		"dateReserved": "2018-01-05T00:16:00.000Z"
+	},
+	"containers": {
+		"cna": {
+			"providerMetadata": {
+				"orgID": "Not found",
+				"shortName": "Not found",
+				"dateUpdated": "2024-11-20T00:00:00"
+			},
+			"title": "Information about Meltdown and Spectre findings",
+			"descriptions": [
+				{
+					"lang": "en",
+					"value": "Palo Alto Networks is aware of recent vulnerability disclosures, known as Meltdown and Spectre, that affect modern CPU architectures. At this time, our findings show that these vulnerabilities pose no increased risk to Palo Alto Networks PAN-OS devices. (CVE-2017-5715, CVE-2017-5753, and CVE-2017-5754). This security advisory will be updated as more information becomes available or if there are changes in the impact of these vulnerabilities.\nPAN-OS/Panorama platforms are not directly impacted by these vulnerabilities, as successful exploitation on PAN-OS devices requires an attacker to have already compromised the PAN-OS operating system. We treat any vulnerability that compromises PAN-OS to allow the execution of code as a critical vulnerability. Any such vulnerability would be urgently patched and made available in a PAN-OS maintenance update for all supported versions of PAN-OS.\n \n Because of the low risk of the vulnerability and the relatively high risk of known patch options, the risk and impact must be carefully considered and thoroughly understood.  We will continue to monitor the situation as it evolves, and to evaluate patching options available from our partner vendors as they become available.  We will update this bulletin with updates regarding software patches or other mitigations as they become available.\n \n For more background, please see the following https://researchcenter.paloaltonetworks.com/2018/01/understanding-affected-not-vulnerable/.",
+					"supportingMedia": [
+						{
+							"base64": "false",
+							"type": "text/html",
+							"value": "<pre>Palo Alto Networks is aware of recent vulnerability disclosures, known as Meltdown and Spectre, that affect modern CPU architectures. At this time, our findings show that these vulnerabilities pose no increased risk to Palo Alto Networks PAN-OS devices. (CVE-2017-5715, CVE-2017-5753, and CVE-2017-5754). This security advisory will be updated as more information becomes available or if there are changes in the impact of these vulnerabilities.\nPAN-OS/Panorama platforms are not directly impacted by these vulnerabilities, as successful exploitation on PAN-OS devices requires an attacker to have already compromised the PAN-OS operating system. We treat any vulnerability that compromises PAN-OS to allow the execution of code as a critical vulnerability. Any such vulnerability would be urgently patched and made available in a PAN-OS maintenance update for all supported versions of PAN-OS.\n \n Because of the low risk of the vulnerability and the relatively high risk of known patch options, the risk and impact must be carefully considered and thoroughly understood.  We will continue to monitor the situation as it evolves, and to evaluate patching options available from our partner vendors as they become available.  We will update this bulletin with updates regarding software patches or other mitigations as they become available.\n \n For more background, please see the following https://researchcenter.paloaltonetworks.com/2018/01/understanding-affected-not-vulnerable/.</pre>"
+						}
+					]
+				}
+			],
+			"affected": [
+				{
+					"vendor": "Palo Alto Networks",
+					"product": "PAN-OS",
+					"versions": [
+						{
+							"status": "unaffected",
+							"version": "All"
+						}
+					]
+				}
+			],
+			"problemTypes": [
+				{
+					"descriptions": [
+						{
+							"type": "CWE",
+							"lang": "en",
+							"description": "CWE-200 Information Exposure",
+							"cweId": "CWE-200"
+						}
+					]
+				}
+			],
+			"metrics": [
+				{
+					"format": "CVSS",
+					"scenarios": [
+						{
+							"lang": "en",
+							"value": "GENERAL"
+						}
+					],
+					"cvssV3_1": {
+						"version": "3.1",
+						"vectorString": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:N",
+						"attackVector": "LOCAL",
+						"attackComplexity": "HIGH",
+						"privilegesRequired": "LOW",
+						"userInteraction": "NONE",
+						"scope": "UNCHANGED",
+						"confidentialityImpact": "NONE",
+						"integrityImpact": "NONE",
+						"availabilityImpact": "NONE",
+						"baseScore": 0,
+						"baseSeverity": "NONE"
+					}
+				}
+			],
+			"workarounds": [
+				{
+					"lang": "en",
+					"value": "Customers looking to mitigate their exposure to Meltdown and Spectre on their endpoints are encouraged to consult with their equipment manufacturers and operating system vendors on steps to patch or mitigate exposure. IPS coverage for known attacks has been added to content updates, beginning with version 763 and later; however, we strongly advise customers to patch endpoints at high risk of exploitation. The Traps agent does not detect/prevent this specific type of CPU-level side-channel attack.",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "Customers looking to mitigate their exposure to Meltdown and Spectre on their endpoints are encouraged to consult with their equipment manufacturers and operating system vendors on steps to patch or mitigate exposure. IPS coverage for known attacks has been added to content updates, beginning with version 763 and later; however, we strongly advise customers to patch endpoints at high risk of exploitation. The Traps agent does not detect/prevent this specific type of CPU-level side-channel attack."
+					}
+				}
+			],
+			"solutions": [
+				{
+					"lang": "en",
+					"value": "No action is required at this time. This bulletin will be updated as more information becomes available. The security and stability of our products is a top priority. We will continue to monitor the situation as it evolves, and to evaluate update options...",
+					"supportingMedia": {
+						"base64": false,
+						"type": "text/html",
+						"value": "No action is required at this time. This bulletin will be updated as more information becomes available. The security and stability of our products is a top priority. We will continue to monitor the situation as it evolves, and to evaluate update options..."
+					}
+				}
+			],
+			"references": [
+				{
+					"tags": [
+						"x_refsource_CONFIRM"
+					],
+					"url": "https://security.paloaltonetworks.com/PAN-SA-2018-0001"
+				}
+			],
+			"source": {
+				"advisory": "PAN-SA-2018-0001",
+				"discovery": "EXTERNAL"
+			},
+			"datePublic": "2018-01-05T00:16:00.000Z",
+			"x_generator": {
+				"engine": "Vulnogram 0.0.9"
+			}
+		}
+	}
+}
